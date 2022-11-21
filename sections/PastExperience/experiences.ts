@@ -4,7 +4,7 @@ export const studies: TimelineItem[] = [
   {
     name: "mechanical engineering",
     place: "Université Pierre et Marie Curie",
-    type: "Master 2",
+    sector: "Master 2",
     location: "Paris",
     period: {
       year: "2004 ~ 2006",
@@ -17,7 +17,7 @@ export const studies: TimelineItem[] = [
   {
     name: "Information Technology in finance",
     place: "Université Pierre et Marie Curie",
-    type: "Master 2",
+    sector: "Master 2",
     location: "Paris",
     period: {
       year: "2006 ~ 2008",
@@ -33,7 +33,7 @@ export const works: TimelineItem[] = [
   {
     name: "Full-Stack Software Engineer",
     place: "Affinidi GMBH",
-    type: "Permanent",
+    sector: "Permanent",
     location: "Berlin (Remote)",
     period: {
       year: "2021 ~",
@@ -46,7 +46,7 @@ export const works: TimelineItem[] = [
   {
     name: "Front-End Engineer",
     place: "RealT",
-    type: "Freelance",
+    sector: "Freelance",
     location: "Remote",
     period: {
       year: "2021",
@@ -59,7 +59,7 @@ export const works: TimelineItem[] = [
   {
     name: "Front-End Engineer",
     place: "Sestrel",
-    type: "Freelance",
+    sector: "Freelance",
     location: "Remote",
     period: {
       year: "2020 ~ 2021",
@@ -72,7 +72,7 @@ export const works: TimelineItem[] = [
   {
     name: "Full-Stack Software Engineer",
     place: "Actine GMBH",
-    type: "Permanent",
+    sector: "Permanent",
     location: "Cologne",
     period: {
       year: "2017 ~ 2020",
@@ -85,7 +85,7 @@ export const works: TimelineItem[] = [
   {
     name: "Full-Stack Software Engineer",
     place: "Investbook.fr SAS",
-    type: "Permanent",
+    sector: "Permanent",
     location: "Paris",
     period: {
       year: "2015 ~ 2017",
@@ -98,7 +98,7 @@ export const works: TimelineItem[] = [
   {
     name: "Full-Stack Software Engineer",
     place: "TSA SAS",
-    type: "Permanent",
+    sector: "Permanent",
     location: "Paris",
     period: {
       year: "2012 ~ 2015",
@@ -111,7 +111,7 @@ export const works: TimelineItem[] = [
   {
     name: "Software Engineer",
     place: "CFM SA",
-    type: "Permanent",
+    sector: "Permanent",
     location: "Tokyo",
     period: {
       year: "2010 ~ 2012",
@@ -124,7 +124,7 @@ export const works: TimelineItem[] = [
   {
     name: "Junior Software Engineer",
     place: "CFM SA",
-    type: "Permanent",
+    sector: "Permanent",
     location: "Paris",
     period: {
       year: "2009 ~ 2010",
