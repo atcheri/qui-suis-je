@@ -20,13 +20,13 @@ const ThemeSwitch: FC = () => {
 
   return isDarkMode ? (
     <HiOutlineSun
-      className="w-10 h-10 text-yellow-200"
+      className="w-7 h-7 md:w-10 md:h-10 text-yellow-200"
       role="button"
       onClick={() => setTheme("light")}
     />
   ) : (
     <HiOutlineMoon
-      className="w-10 h-10 text-gray-600"
+      className="w-7 h-7 md:w-10 md:h-10 text-gray-600"
       role="button"
       onClick={() => setTheme("dark")}
     />

@@ -5,11 +5,9 @@ import Logo from "../../components/Logo";
 
 const Header: FC = () => {
   return (
-    <header className="h-15 shadow-sm dark:border-gray-700">
-      <div className="px-4 sm:px-6 py-4 flex justify-between items-center">
-        <Logo />
-        <ThemeSwitch />
-      </div>
+    <header className="py-4 px-4 md:px-6 flex justify-between items-center h-15">
+      <Logo />
+      <ThemeSwitch />
     </header>
   );
 };
