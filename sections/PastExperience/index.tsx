@@ -5,11 +5,13 @@ import { MdOutlineMapsHomeWork } from "react-icons/md";
 import Timeliner from "../../components/Timeliner";
 import AnchoredHeader from "../../components/AnchoredHeader";
 import { studies, works } from "./experiences";
+import Section from "../../components/Section";
 
 const PastExperience: FC = () => {
   const [expType, setExpType] = useState<"study" | "work">("work");
+
   return (
-    <section id="past-experience" className="">
+    <Section id="past-experience">
       <div className="flex flex-col items-center m-8">
         <AnchoredHeader
           anchor="past-experience"
@@ -39,15 +41,11 @@ const PastExperience: FC = () => {
         </ul>
         <div className="flex justify-center">
           <div className="md:w-3/5">
-            {expType === "study" ? (
-              <Timeliner items={studies} />
-            ) : (
-              <Timeliner items={works} />
-            )}
+            <Timeliner items={expType === "study" ? studies : works} />
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

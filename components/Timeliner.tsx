@@ -1,5 +1,6 @@
-import React, { FC, ReactNode, useState } from "react";
+import React, { FC, useState } from "react";
 import { HiOutlineCheckCircle } from "react-icons/hi2";
+import { MdOutlineUnfoldLess } from "react-icons/md";
 import { TbDotsVertical } from "react-icons/tb";
 
 type TimelinePeriod = {
@@ -82,13 +83,13 @@ const Timeliner: FC<TimelineProps> = ({ items }) => {
       {items.length > min && (
         <div
           className="relative cursor-pointer"
-          onClick={() => setLimit(limit === items.length ? min : items.length)}
+          onClick={() => setLimit(isMax ? min : items.length)}
         >
-          <span className="absolute inline-block rounded-full p-2 bg-indigo-500 text-white text-xs">
-            <TbDotsVertical />
+          <span className="absolute inline-block rounded-full bg-indigo-500 text-white text-xs p-2">
+            {isMax ? <MdOutlineUnfoldLess /> : <TbDotsVertical />}
           </span>
           {!isMax && (
-            <span className="absolute inline-block animate-[ping_2s_ease_infinite]  transition delay-1000 rounded-full p-4 bg-indigo-500 text-white text-xs"></span>
+            <span className="absolute inline-block rounded-full bg-indigo-500 text-white text-xs p-4 animate-[ping_2s_ease_infinite]"></span>
           )}
         </div>
       )}
