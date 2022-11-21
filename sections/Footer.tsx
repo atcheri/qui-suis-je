@@ -14,7 +14,7 @@ const Footer: FC = () => {
           <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
         </span>
       </a>
-      <div className="text-center text-sm text-gray-500">
+      <div className="text-sm text-gray-500">
         <span className="dark:text-gray-100 text-gray-900 font-bold text-lg mr-2">
           {" "}
           Next.js Dev
