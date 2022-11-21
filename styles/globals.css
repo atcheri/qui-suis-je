@@ -22,6 +22,10 @@
       focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-20 
       whitespace-nowrap;
   }
+
+  .sub-title {
+    @apply dark:text-slate-400;
+  }
 }
 
 html,

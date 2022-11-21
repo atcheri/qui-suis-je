@@ -1,9 +1,9 @@
-import { FC, PropsWithChildren } from "react";
 import Head from "next/head";
+import { FC, PropsWithChildren } from "react";
+import { Fade, Slide } from "react-awesome-reveal";
 
 import Header from "./Header";
 import Footer from "./Footer";
-import { Fade, Slide } from "react-awesome-reveal";
 
 const Layout: FC<PropsWithChildren<{}>> = ({ children }) => {
   return (
