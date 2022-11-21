@@ -1,6 +1,7 @@
 import { useTheme } from "next-themes";
 import { FC, useEffect, useState } from "react";
-import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi2";
+import { HiOutlineSun } from "react-icons/hi2";
+import { RiMoonFoggyLine } from "react-icons/ri";
 
 const ThemeSwitch: FC = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -25,7 +26,7 @@ const ThemeSwitch: FC = () => {
       onClick={() => setTheme("light")}
     />
   ) : (
-    <HiOutlineMoon
+    <RiMoonFoggyLine
       className="w-7 h-7 md:w-10 md:h-10 text-gray-600"
       role="button"
       onClick={() => setTheme("dark")}
