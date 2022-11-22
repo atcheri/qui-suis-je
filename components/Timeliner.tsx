@@ -85,11 +85,11 @@ const Timeliner: FC<TimelineProps> = ({ items }) => {
           className="relative cursor-pointer"
           onClick={() => setLimit(isMax ? min : items.length)}
         >
-          <span className="absolute inline-block rounded-full bg-indigo-500 text-white text-xs p-2">
+          <span className="absolute inline-block rounded-full bg-indigo-500 text-white text-lg p-2">
             {isMax ? <MdOutlineUnfoldLess /> : <TbDotsVertical />}
           </span>
           {!isMax && (
-            <span className="absolute inline-block rounded-full bg-indigo-500 text-white text-xs p-4 animate-[ping_2s_ease_infinite]"></span>
+            <span className="absolute inline-block rounded-full bg-indigo-500 text-white text-lg p-4 ml-[1px] top-[1px] animate-[ping_2s_ease_infinite]"></span>
           )}
         </div>
       )}
