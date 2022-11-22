@@ -2,9 +2,8 @@ import { FC } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 
-import HightLight from "../components/HighLight";
-import TypeWriter from "../components/TypeWriter";
-import CodeSnippets from "../sections/CodeSnippets";
+import CodeSnippets from "../CodeSnippets";
+import Punchline from "./Punchline";
 
 const delayUnit = 500;
 
@@ -17,10 +16,7 @@ const Hero: FC = () => {
         <div className="flex flex-col">
           <Slide direction="down" delay={delayUnit}>
             <Fade delay={delayUnit}>
-              <h2 className="text-2xl sm:text-6xl font-bold">
-                I ship <HightLight>production</HightLight> code, <br /> and help
-                business to <TypeWriter words={["develop", "grow"]} />
-              </h2>
+              <Punchline />
             </Fade>
           </Slide>
           <Slide
