@@ -3,7 +3,7 @@ import { ComponentType, FC, useState } from "react";
 import {
   GolangIcon,
   SolidityIcon,
-  TypescriptIcon,
+  TypescriptReactIcon,
 } from "../../components/Icons";
 import { NodeJSIcon } from "../../components/Icons/NodeJSIcon";
 import { IconProps } from "../../components/Icons/types";
@@ -28,7 +28,7 @@ const snippets: Snippet[] = [
   {
     lang: "typescript",
     imgPath: "/snippets/react-snapshot.png",
-    logo: TypescriptIcon,
+    logo: TypescriptReactIcon,
   },
   {
     lang: "solidity",
