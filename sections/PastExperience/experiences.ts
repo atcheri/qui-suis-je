@@ -41,7 +41,18 @@ export const works: TimelineItem[] = [
     content: "lorem ipsum",
     stack: {
       langs: ["go", "typescript"],
-      tools: ["react", "gitlab", "kubernetes", "aws", "rest"],
+      tools: [
+        "react",
+        "jest",
+        "docker",
+        "kubernetes",
+        "aws",
+        "rest",
+        "mongo",
+        "mysql",
+        "postgres",
+        "gitlab",
+      ],
     },
     description: "lorem ipsum",
   },
@@ -57,8 +68,8 @@ export const works: TimelineItem[] = [
     },
     content: "lorem ipsum",
     stack: {
-      langs: ["go", "typescript"],
-      tools: ["react", "gitlab", "kubernetes", "aws"],
+      langs: ["typescript"],
+      tools: ["metamask", "react", "jest", "nextjs", "heroku", "gitlab"],
     },
     description: "lorem ipsum",
   },
@@ -73,6 +84,10 @@ export const works: TimelineItem[] = [
       to: "April",
     },
     content: "lorem ipsum",
+    stack: {
+      langs: ["nodejs", "typescript", "solidity"],
+      tools: ["metamask", "docker", "react", "react-native", "jest", "netlify"],
+    },
   },
   {
     name: "Full-Stack Software Engineer",
@@ -85,6 +100,10 @@ export const works: TimelineItem[] = [
       to: "September",
     },
     content: "lorem ipsum",
+    stack: {
+      langs: ["nodejs", "typescript"],
+      tools: ["apollo", "graphql", "react", "jest", "docker", "mongo", "rest"],
+    },
   },
   {
     name: "Full-Stack Software Engineer",
@@ -97,6 +116,10 @@ export const works: TimelineItem[] = [
       to: "September",
     },
     content: "lorem ipsum",
+    stack: {
+      langs: ["php", "typescript"],
+      tools: ["symfony", "mysql", "rest", "jquery"],
+    },
   },
   {
     name: "Full-Stack Software Engineer",

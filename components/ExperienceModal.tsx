@@ -1,49 +1,8 @@
-import { ComponentType, FC } from "react";
+import { FC } from "react";
 import { Modal } from "flowbite-react";
-import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
 
-import { TechLang, TechTool, TimelineItem } from "./Timeliner";
-import {
-  AwsIcon,
-  CppIcon,
-  GithubIcon,
-  GitlabIcon,
-  GolangIcon,
-  KubernetesIcon,
-  NodeJSIcon,
-  PhpIcon,
-  SolidityIcon,
-  TypescriptIcon,
-  TypescriptReactIcon,
-} from "./Icons";
-import { IconProps } from "./Icons/types";
-
-const renderTechStackIcon = (lang: TechLang | TechTool): JSX.Element => {
-  const icons: Record<string, ComponentType<IconProps>> = {
-    "c++": CppIcon,
-    go: GolangIcon,
-    nodejs: NodeJSIcon,
-    php: PhpIcon,
-    solidity: SolidityIcon,
-    typescript: TypescriptIcon,
-    //
-    aws: AwsIcon,
-    github: GithubIcon,
-    gitlab: GitlabIcon,
-    kubernetes: KubernetesIcon,
-    react: TypescriptReactIcon,
-    "react-native": ReactNativeIcon,
-    rest: RestApiIcon,
-    nextjs: NextjsIcon,
-  };
-
-  const Icon: ComponentType<IconProps> = icons[lang];
-  if (!Icon) {
-    return <HiOutlineQuestionMarkCircle />;
-  }
-
-  return <Icon className="h-10 w-10" />;
-};
+import { TimelineItem } from "./Timeliner";
+import TechStackIcon from "./TechStackIcon";
 
 type ExperienceProps = {
   data: TimelineItem;
@@ -72,12 +31,16 @@ const Experience: FC<ExperienceProps> = ({
             <h3 className="text-md italic mb-2">Tech Stack</h3>
             <ul className="flex gap-2 mb-1">
               {stack?.langs.map((l) => (
-                <li key={l}>{renderTechStackIcon(l)}</li>
+                <li key={l}>
+                  <TechStackIcon lang={l} />
+                </li>
               ))}
             </ul>
             <ul className="flex gap-2">
               {stack?.tools.map((t) => (
-                <li key={t}>{renderTechStackIcon(t)}</li>
+                <li key={t}>
+                  <TechStackIcon lang={t} />
+                </li>
               ))}
             </ul>
           </div>

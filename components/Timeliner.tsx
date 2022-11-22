@@ -22,13 +22,27 @@ export type TechLang =
   | "php";
 
 export type TechTool =
+  | "apollo"
+  | "aws"
+  | "docker"
+  | "gitlab"
+  | "graphql"
+  | "heroku"
+  | "kubernetes"
+  | "jest"
+  | "jquery"
+  | "metamask"
+  | "mongo"
+  | "mysql"
+  | "netlify"
+  | "nextjs"
+  | "postgres"
   | "react"
   | "react-native"
-  | "gitlab"
-  | "kubernetes"
-  | "aws"
   | "rest"
-  | "nextjs";
+  | "symfony"
+  | "tailwind"
+  | "vuejs";
 
 type TechStack = {
   langs: TechLang[];

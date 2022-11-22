@@ -11,7 +11,7 @@ export const PhpIcon: FC<IconProps> = ({ active = true, ...rest }) => {
       preserveAspectRatio="xMinYMin meet"
       {...rest}
     >
-      <g fill-rule="evenodd">
+      <g fillRule="evenodd">
         <ellipse
           fill={`${!active ? "grey" : "#8993BE"}`}
           cx="128"
