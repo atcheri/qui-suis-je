@@ -1,3 +1,6 @@
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import ContactMe from "../sections/ContactMe";
 import Hero from "../sections/Hero";
 import Layout from "../sections/Layout";
@@ -14,3 +17,15 @@ export default function Home() {
     </Layout>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || "en", [
+        "common",
+        "footer",
+        "menu",
+      ])),
+    },
+  };
+};

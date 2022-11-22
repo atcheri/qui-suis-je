@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
 
 import HightLight from "../components/HighLight";
 import TypeWriter from "../components/TypeWriter";
@@ -8,6 +9,8 @@ import CodeSnippets from "../sections/CodeSnippets";
 const delayUnit = 500;
 
 const Hero: FC = () => {
+  const { t } = useTranslation("common");
+
   return (
     <section className="flex flex-col justify-center items-center space-y-10 mt-12 sm:mt-24 md:mt-32">
       <div className="grid md:grid-cols-2 gap-3 md:gap-6">
@@ -27,10 +30,10 @@ const Hero: FC = () => {
           >
             <Fade delay={2 * delayUnit}>
               <button className="btn" type="button" onClick={() => {}}>
-                Download CV
+                {t("download")} {t("resume")}
               </button>
               <button className="btn" type="button" onClick={() => {}}>
-                About me
+                {t("about-me")}
               </button>
             </Fade>
           </Slide>
