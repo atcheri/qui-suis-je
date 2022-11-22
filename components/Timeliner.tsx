@@ -27,7 +27,8 @@ export type TechTool =
   | "gitlab"
   | "kubernetes"
   | "aws"
-  | "rest";
+  | "rest"
+  | "nextjs";
 
 type TechStack = {
   langs: TechLang[];
@@ -58,20 +59,22 @@ const min = 4;
 
 const Timeliner: FC<TimelineProps> = ({ items }) => {
   const [limit, setLimit] = useState(min);
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
+  const [item, setItem] = useState<TimelineItem>(items[0]);
+
+  const showItemInModal = (index: number) => {
+    setItem(items[index]);
+    setShow(true);
+  };
+  const closeModal = () => {
+    setShow(false);
+  };
 
   const isMax = limit === items.length;
 
   return (
     <>
-      <ExperienceModal
-        data={items[0]}
-        show={show}
-        toggleShow={() => setShow((p) => !p)}
-      />
-      <Button color="gray" onClick={() => setShow(true)}>
-        Open modal
-      </Button>
+      <ExperienceModal data={item} show={show} toggleShow={closeModal} />
       <div className="text-center">
         <div
           className={`mt-5 text-left ${
@@ -93,7 +96,7 @@ const Timeliner: FC<TimelineProps> = ({ items }) => {
                 <div className="border-r-2 border-indigo-400 absolute h-full left-1 md:left-20 top-2">
                   <HiOutlineCheckCircle className="w-6 h-6 -top-1 -ml-[11px] absolute text-indigo-400 bg-white dark:bg-black" />
                 </div>
-                <div className="ml-10">
+                <div className="ml-10" onClick={() => showItemInModal(i)}>
                   <div className="capitalize font-bold">
                     {name}{" "}
                     {sector && (

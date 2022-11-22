@@ -1,5 +1,8 @@
+export { AwsIcon } from "./AwsIcon";
+export { ApolloGraphqlIcon } from "./ApolloGraphqlIcon";
 export { CppIcon } from "./CppIcon";
 export { ElmIcon } from "./ElmIcon";
+export { FlowbiteIcon } from "./FlowbiteIcon";
 export { GolangIcon } from "./GolangIcon";
 export { PhpIcon } from "./PhpIcon";
 export { PythonIcon } from "./PythonIcon";
