@@ -2,41 +2,46 @@ import { ComponentType, FC } from "react";
 import { Modal } from "flowbite-react";
 import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
 
-import { TechLang, TimelineItem } from "./Timeliner";
+import { TechLang, TechTool, TimelineItem } from "./Timeliner";
 import {
+  AwsIcon,
   CppIcon,
+  GithubIcon,
+  GitlabIcon,
   GolangIcon,
+  KubernetesIcon,
   NodeJSIcon,
   PhpIcon,
   SolidityIcon,
   TypescriptIcon,
+  TypescriptReactIcon,
 } from "./Icons";
 import { IconProps } from "./Icons/types";
 
-const renderProgrammingIcon = (lang: TechLang): JSX.Element => {
-  let Icon: ComponentType<IconProps>;
-  switch (lang) {
-    case "go":
-      Icon = GolangIcon;
-      break;
-    case "typescript":
-      Icon = TypescriptIcon;
-      break;
-    case "nodejs":
-      Icon = NodeJSIcon;
-      break;
-    case "c++":
-      Icon = CppIcon;
-      break;
-    case "solidity":
-      Icon = SolidityIcon;
-      break;
-    case "php":
-      Icon = PhpIcon;
-      break;
-    default:
-      Icon = HiOutlineQuestionMarkCircle;
+const renderTechStackIcon = (lang: TechLang | TechTool): JSX.Element => {
+  const icons: Record<string, ComponentType<IconProps>> = {
+    "c++": CppIcon,
+    go: GolangIcon,
+    nodejs: NodeJSIcon,
+    php: PhpIcon,
+    solidity: SolidityIcon,
+    typescript: TypescriptIcon,
+    //
+    aws: AwsIcon,
+    github: GithubIcon,
+    gitlab: GitlabIcon,
+    kubernetes: KubernetesIcon,
+    react: TypescriptReactIcon,
+    "react-native": ReactNativeIcon,
+    rest: RestApiIcon,
+    nextjs: NextjsIcon,
+  };
+
+  const Icon: ComponentType<IconProps> = icons[lang];
+  if (!Icon) {
+    return <HiOutlineQuestionMarkCircle />;
   }
+
   return <Icon className="h-10 w-10" />;
 };
 
@@ -63,19 +68,24 @@ const Experience: FC<ExperienceProps> = ({
       </Modal.Header>
       <Modal.Body>
         <div className="space-y-6">
-          <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          <div className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
             <h3 className="text-md italic mb-2">Tech Stack</h3>
-            <ul className="flex gap-2">
+            <ul className="flex gap-2 mb-1">
               {stack?.langs.map((l) => (
-                <li key={l}>{renderProgrammingIcon(l)}</li>
+                <li key={l}>{renderTechStackIcon(l)}</li>
               ))}
             </ul>
-          </p>
-          <p className="pb-6 border-b-[1px] border-opacity-60" />
-          <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            <ul className="flex gap-2">
+              {stack?.tools.map((t) => (
+                <li key={t}>{renderTechStackIcon(t)}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="pb-6 border-b-[1px] border-opacity-60" />
+          <div className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
             <h3 className="text-md italic mb-2">Context</h3>
             {description}
-          </p>
+          </div>
         </div>
       </Modal.Body>
       <Modal.Footer>
