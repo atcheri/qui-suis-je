@@ -9,7 +9,7 @@ const SideProjects: FC = () => {
       <div className="flex flex-col items-center m-8">
         <AnchoredHeader
           anchor="side-projects"
-          title="Out of work"
+          title="Outside of work"
           subTitle="What I've recently learned and worked on"
         />
       </div>

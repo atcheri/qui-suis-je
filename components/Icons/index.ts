@@ -1,4 +1,9 @@
+export { CppIcon } from "./CppIcon";
+export { ElmIcon } from "./ElmIcon";
 export { GolangIcon } from "./GolangIcon";
-export { TypescriptIcon } from "./TypescriptIcon";
+export { PhpIcon } from "./PhpIcon";
+export { PythonIcon } from "./PythonIcon";
 export { NodeJSIcon } from "./NodeJSIcon";
+export { TypescriptIcon } from "./TypescriptIcon";
+export { TypescriptReactIcon } from "./TypescriptReactIcon";
 export { SolidityIcon } from "./SolidityIcon";

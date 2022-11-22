@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { IconProps } from "./types";
 
-export const SolidityIcon: FC<IconProps> = ({ active, ...rest }) => {
+export const SolidityIcon: FC<IconProps> = ({ active = true, ...rest }) => {
   return (
     <svg
       viewBox="0 0 523.9 812.97"

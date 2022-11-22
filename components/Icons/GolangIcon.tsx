@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { IconProps } from "./types";
 
-export const GolangIcon: FC<IconProps> = ({ active, ...rest }) => {
+export const GolangIcon: FC<IconProps> = ({ active = true, ...rest }) => {
   return (
     <svg
       height="1250"

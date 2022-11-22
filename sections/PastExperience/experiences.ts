@@ -12,7 +12,6 @@ export const studies: TimelineItem[] = [
       to: "June",
     },
     content: "lorem ipsum",
-    icon: "",
   },
   {
     name: "Information Technology in finance",
@@ -25,7 +24,6 @@ export const studies: TimelineItem[] = [
       to: "June",
     },
     content: "lorem ipsum",
-    icon: "",
   },
 ];
 
@@ -41,7 +39,11 @@ export const works: TimelineItem[] = [
       to: "Present",
     },
     content: "lorem ipsum",
-    icon: "",
+    stack: {
+      langs: ["go", "typescript"],
+      tools: ["react", "gitlab", "kubernetes", "aws", "rest"],
+    },
+    description: "lorem ipsum",
   },
   {
     name: "Front-End Engineer",
@@ -54,7 +56,11 @@ export const works: TimelineItem[] = [
       to: "June",
     },
     content: "lorem ipsum",
-    icon: "",
+    stack: {
+      langs: ["go", "typescript"],
+      tools: ["react", "gitlab", "kubernetes", "aws"],
+    },
+    description: "lorem ipsum",
   },
   {
     name: "Front-End Engineer",
@@ -67,7 +73,6 @@ export const works: TimelineItem[] = [
       to: "April",
     },
     content: "lorem ipsum",
-    icon: "",
   },
   {
     name: "Full-Stack Software Engineer",
@@ -80,7 +85,6 @@ export const works: TimelineItem[] = [
       to: "September",
     },
     content: "lorem ipsum",
-    icon: "",
   },
   {
     name: "Full-Stack Software Engineer",
@@ -93,7 +97,6 @@ export const works: TimelineItem[] = [
       to: "September",
     },
     content: "lorem ipsum",
-    icon: "",
   },
   {
     name: "Full-Stack Software Engineer",
@@ -106,7 +109,6 @@ export const works: TimelineItem[] = [
       to: "August",
     },
     content: "lorem ipsum",
-    icon: "",
   },
   {
     name: "Software Engineer",
@@ -119,7 +121,6 @@ export const works: TimelineItem[] = [
       to: "February",
     },
     content: "lorem ipsum",
-    icon: "",
   },
   {
     name: "Junior Software Engineer",
@@ -132,6 +133,5 @@ export const works: TimelineItem[] = [
       to: "May",
     },
     content: "lorem ipsum",
-    icon: "",
   },
 ];
