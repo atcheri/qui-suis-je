@@ -22,6 +22,10 @@
       focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-20 
       whitespace-nowrap;
   }
+  .btn.outline {
+    @apply hover:bg-indigo-700 hover:text-white hover:border-indigo-900
+      text-indigo-600 bg-transparent;
+  }
 
   .underlined {
     @apply pb-3 border-b-4 border-opacity-100
@@ -49,13 +53,3 @@ a {
 * {
   box-sizing: border-box;
 }
-/* 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */

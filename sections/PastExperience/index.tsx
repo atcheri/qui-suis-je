@@ -6,15 +6,16 @@ import Timeliner from "../../components/Timeliner";
 import AnchoredHeader from "../../components/AnchoredHeader";
 import { studies, works } from "./experiences";
 import Section from "../../components/Section";
+import { SECTION } from "../constants";
 
 const PastExperience: FC = () => {
   const [expType, setExpType] = useState<"study" | "work">("work");
 
   return (
-    <Section id="past-experience">
+    <Section id={SECTION.PAST_EXPERIENCE}>
       <div className="flex flex-col items-center m-8">
         <AnchoredHeader
-          anchor="past-experience"
+          anchor={SECTION.PAST_EXPERIENCE}
           title="Until now"
           subTitle="What I studied, where I worked"
         />

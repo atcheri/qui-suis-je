@@ -18,7 +18,10 @@ const AnchoredHeader: FC<AnchoredHeaderProps> = ({
   return (
     <>
       <Link href={`/#${anchor}`}>
-        <h2 className="flex items-center gap-1 text-2xl font-bold mb-2">
+        <h2
+          id={anchor}
+          className="flex items-center gap-1 text-2xl font-bold mb-2"
+        >
           <HiOutlineHashtag />
           <HighLight className="text-gray-700 dark:text-white">
             {title}

@@ -3,6 +3,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 import ThemeSwitch from "./ThemeSwitch";
 import Logo from "../../components/Logo";
+import NavBar from "./NavBar";
 
 const Header: FC = () => {
   return (
@@ -17,6 +18,7 @@ const Header: FC = () => {
           <ThemeSwitch />
         </Fade>
       </Slide>
+      <NavBar />
     </header>
   );
 };
