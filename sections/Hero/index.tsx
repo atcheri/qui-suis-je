@@ -4,6 +4,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 import { BsMouse } from "react-icons/bs";
 
+import { withTransition } from "../../styles/tailwind.classes";
 import CodeSnippets from "../CodeSnippets";
 import { SECTION } from "../constants";
 import Punchline from "./Punchline";
@@ -54,7 +55,9 @@ const Hero: FC = () => {
         </div>
         <Fade delay={5 * delayUnit}>
           <Link href={`#${SECTION.PAST_EXPERIENCE}`}>
-            <BsMouse className="animate-bounce h-8 w-8 cursor-pointer hover:text-indigo-500" />
+            <BsMouse
+              className={`${withTransition} animate-bounce h-8 w-8 cursor-pointer hover:text-indigo-500`}
+            />
           </Link>
         </Fade>
       </div>

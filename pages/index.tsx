@@ -1,5 +1,6 @@
 import { GetServerSideProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useRouter } from "next/router";
 import { FC, useCallback, useEffect } from "react";
 
 import { SECTION } from "../sections/constants";
@@ -10,6 +11,8 @@ import PastExperience from "../sections/PastExperience";
 import SideProjects from "../sections/SideProjects";
 
 const Home: FC = () => {
+  const { locale } = useRouter();
+
   const onScrollToAnchor = useCallback((event?: Event) => {
     const { scrollY } = window;
     const sections = document.querySelectorAll<HTMLElement>("section[id]");
@@ -17,7 +20,10 @@ const Home: FC = () => {
       const h = s.offsetHeight,
         id = s.getAttribute("id"),
         top = s.offsetTop - (id === `#${SECTION.HOME}` ? 90 : 58),
-        link = document.querySelector(`.nav__menu a[href*="/fr${id}"]`);
+        selector = `.nav__menu a[href*="/${
+          locale === "en" ? "" : locale
+        }${id}"]`,
+        link = document.querySelector(selector);
 
       if (!link) {
         return;

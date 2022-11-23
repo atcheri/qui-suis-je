@@ -36,7 +36,7 @@ const ConnectWithMe: FC = () => {
         <ContactCard
           Icon={RiMailSendLine}
           title="Email"
-          link={{ href: "mailto:atsuhiro@free.fr", text: "atsuhiro@free.fr" }}
+          link={{ href: "mailto:atcheri@gmail.com", text: "atcheri@gmail.com" }}
         />
         <ContactCard
           Icon={TbBrandTelegram}
