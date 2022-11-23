@@ -11,19 +11,14 @@ import SideProjects from "../sections/SideProjects";
 
 const Home: FC = () => {
   const onScrollToAnchor = useCallback((event?: Event) => {
-    const { pageYOffset, scrollY } = window;
+    const { scrollY } = window;
     const sections = document.querySelectorAll<HTMLElement>("section[id]");
     sections.forEach((s: HTMLElement) => {
       const h = s.offsetHeight,
         id = s.getAttribute("id"),
         top = s.offsetTop - (id === `#${SECTION.HOME}` ? 90 : 58),
         link = document.querySelector(`.nav__menu a[href*="/fr${id}"]`);
-      console.log(
-        "id == the other",
-        id,
-        `#${SECTION.HOME}`,
-        id === `#${SECTION.HOME}`
-      );
+
       if (!link) {
         return;
       }

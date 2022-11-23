@@ -14,7 +14,7 @@ const Hero: FC = () => {
   const { t } = useTranslation("common");
 
   return (
-    <section id={`#${SECTION.HOME}`} className="">
+    <section id={`#${SECTION.HOME}`}>
       <Link href={`/#${SECTION.HOME}`} id={SECTION.HOME} className="opacity-0">
         {" "}
         _
@@ -46,7 +46,17 @@ const Hero: FC = () => {
               </Fade>
             </Slide>
           </div>
+          <Fade delay={3 * delayUnit}>
+            <Slide direction="right" delay={3 * delayUnit}>
+              <CodeSnippets />
+            </Slide>
+          </Fade>
         </div>
+        <Fade delay={5 * delayUnit}>
+          <Link href={`#${SECTION.PAST_EXPERIENCE}`}>
+            <BsMouse className="animate-bounce h-8 w-8 cursor-pointer hover:text-indigo-500" />
+          </Link>
+        </Fade>
       </div>
     </section>
   );
