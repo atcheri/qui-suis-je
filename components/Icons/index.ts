@@ -31,4 +31,5 @@ export { SymfonyIcon } from "./SymfonyIcon";
 export { TailwindIcon } from "./TailwindIcon";
 export { TypescriptIcon } from "./TypescriptIcon";
 export { TypescriptReactIcon } from "./TypescriptReactIcon";
+export { VercelIcon } from "./VercelIcon";
 export { VuejsIcon } from "./VuejsIcon";

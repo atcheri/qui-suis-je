@@ -26,7 +26,8 @@ const Punchline: FC = () => {
           を支援する
           <br />
           <HightLight>プロダクション</HightLight>
-          <br /> コードを作します
+          <br />
+          コードを作成
         </h2>
       );
     case "de":

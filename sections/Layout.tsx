@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { FC, PropsWithChildren } from "react";
-import { Fade, Slide } from "react-awesome-reveal";
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -18,11 +17,7 @@ const Layout: FC<PropsWithChildren<{}>> = ({ children }) => {
       </Head>
 
       <div className="min-h-screen mx-auto max-w-6xl flex flex-col">
-        <Slide direction="down">
-          <Fade>
-            <Header />
-          </Fade>
-        </Slide>
+        <Header />
         <main className="flex-grow mx-auto px-4 sm:px-6">{children}</main>
         <Footer />
       </div>
