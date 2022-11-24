@@ -47,7 +47,8 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="24.2701"
           x2="23.2075"
           y2="13.307"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stop-color="#1724C9" />
           <stop offset="1" stop-color="#1C64F2" />
         </linearGradient>
@@ -57,7 +58,8 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="10.9001"
           x2="19.0297"
           y2="2.64962"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stop-color="#1C64F2" />
           <stop offset="1" stop-color="#0092FF" />
         </linearGradient>
@@ -67,7 +69,8 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="5.52115"
           x2="3.67432"
           y2="6.3104"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stop-color="#0092FF" />
           <stop offset="1" stop-color="#45B2FF" />
         </linearGradient>
@@ -77,7 +80,8 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="29.1626"
           x2="26.5366"
           y2="26.1359"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stop-color="#1C64F2" />
           <stop offset="1" stop-color="#0092FF" />
         </linearGradient>
@@ -87,7 +91,8 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="16.1827"
           x2="15.2325"
           y2="24.4347"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stop-color="#1724C9" />
           <stop offset="1" stop-color="#1C64F2" />
         </linearGradient>
@@ -97,7 +102,8 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="22.1356"
           x2="31.007"
           y2="10.9345"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stop-color="#0092FF" />
           <stop offset="1" stop-color="#45B2FF" />
         </linearGradient>
@@ -107,7 +113,8 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="9.63067"
           x2="2.39054"
           y2="20.8063"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stop-color="#1C64F2" />
           <stop offset="1" stop-color="#0092FF" />
         </linearGradient>
@@ -117,7 +124,8 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="9.09912"
           x2="9.67768"
           y2="11.8044"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stop-color="#1724C9" />
           <stop offset="1" stop-color="#1C64F2" />
         </linearGradient>
@@ -127,7 +135,8 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="21.8566"
           x2="13.3326"
           y2="32.2745"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stop-color="#0092FF" />
           <stop offset="1" stop-color="#45B2FF" />
         </linearGradient>

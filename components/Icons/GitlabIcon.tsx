@@ -9,7 +9,8 @@ export const GitlabIcon: FC<IconProps> = ({ active = true, ...rest }) => {
       viewBox="0 0 256 236"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"
-      {...rest}>
+      {...rest}
+    >
       <path d="M128.075 236.075l47.104-144.97H80.97l47.104 144.97z" fill="#E24329" />
       <path d="M128.075 236.074L80.97 91.104H14.956l113.119 144.97z" fill="#FC6D26" />
       <path

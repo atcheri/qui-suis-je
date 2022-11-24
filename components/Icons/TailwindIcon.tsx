@@ -9,7 +9,8 @@ export const TailwindIcon: FC<IconProps> = ({ active = true, ...rest }) => {
       width="2500"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 256 153.6"
-      {...rest}>
+      {...rest}
+    >
       <linearGradient id="a" x1="-2.778%" y1="32%" y2="67.556%">
         <stop offset="0" stop-color="#2298bd" />
         <stop offset="1" stop-color="#0ed7b5" />

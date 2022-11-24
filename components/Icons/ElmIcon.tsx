@@ -9,7 +9,8 @@ export const ElmIcon: FC<IconProps> = ({ active = true, ...rest }) => {
       viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"
-      {...rest}>
+      {...rest}
+    >
       <path fill={`${!active ? 'grey' : '#5FB4CB'}`} d="M128 135.022L7.023 256h241.955z" />
       <path fill={`${!active ? 'grey' : '#EEA400'}`} d="M202.332 195.311L256 248.98V141.643z" />
       <path fill={`${!active ? 'grey' : '#596277'}`} d="M120.978 128L0 7.022V248.98z" />

@@ -9,7 +9,8 @@ export const PhpIcon: FC<IconProps> = ({ active = true, ...rest }) => {
       viewBox="0 0 256 134"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"
-      {...rest}>
+      {...rest}
+    >
       <g fillRule="evenodd">
         <ellipse fill={`${!active ? 'grey' : '#8993BE'}`} cx="128" cy="66.63" rx="128" ry="66.63" />
         <path
