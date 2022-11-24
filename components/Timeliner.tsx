@@ -54,8 +54,9 @@ export type TimelineItem = {
   period: TimelinePeriod;
   /** Short description of the role */
   content: string;
+  url?: string;
   stack?: TechStack;
-  description?: string;
+  description?: string[];
 };
 
 type TimelineProps = {

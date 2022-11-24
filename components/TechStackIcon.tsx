@@ -15,6 +15,7 @@ const icons: Record<string, ComponentType<IconProps>> = {
   go: Icons.GolangIcon,
   nodejs: Icons.NodeJSIcon,
   php: Icons.PhpIcon,
+  python: Icons.PythonIcon,
   solidity: Icons.SolidityIcon,
   typescript: Icons.TypescriptIcon,
   //

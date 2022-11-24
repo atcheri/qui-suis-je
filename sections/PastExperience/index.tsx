@@ -20,15 +20,13 @@ const PastExperience: FC = () => {
         <ul className="flex justify-evenly text-lg font-extrabold">
           <li
             className={`${expType !== 'work' && 'border-opacity-0'} underlined flex items-center gap-2 cursor-pointer`}
-            onClick={() => setExpType('work')}
-          >
+            onClick={() => setExpType('work')}>
             <MdOutlineMapsHomeWork />
             Works
           </li>
           <li
             className={`${expType !== 'study' && 'border-opacity-0'} underlined flex items-center gap-2 cursor-pointer`}
-            onClick={() => setExpType('study')}
-          >
+            onClick={() => setExpType('study')}>
             <SlGraduation /> <span>Education</span>
           </li>
         </ul>

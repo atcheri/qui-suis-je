@@ -34,8 +34,7 @@ const Footer: FC = () => {
               <Link
                 href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <VercelIcon className="fill-black dark:fill-white h-6 w-12" />
               </Link>
             </li>

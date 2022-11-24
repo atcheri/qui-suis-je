@@ -9,8 +9,7 @@ export const PythonIcon: FC<IconProps> = ({ active = true, ...rest }) => {
       viewBox="0 0 256 255"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"
-      {...rest}
-    >
+      {...rest}>
       <defs>
         <linearGradient x1="12.959%" y1="12.039%" x2="79.639%" y2="78.201%" id="a">
           <stop stop-color="#387EB8" offset="0%" />

@@ -47,8 +47,7 @@ const CodeSnippets: FC = () => {
           <li
             key={`${s.lang}-icon`}
             className="mx-4 p-2 font-semibold text-gray-800 rounded-t cursor-pointer dark:bg-white rounded-sm"
-            onClick={() => switchSnippet(i)}
-          >
+            onClick={() => switchSnippet(i)}>
             <s.logo className="h-10 w-10" active={s.lang === activeSnippet.lang} />
           </li>
         ))}

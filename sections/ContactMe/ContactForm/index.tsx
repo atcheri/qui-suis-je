@@ -72,8 +72,7 @@ const ContactForm: FC<ContactFormProps> = () => {
         <div className="relative h-16 mb-8">
           <label
             htmlFor="name"
-            className="absolute px-2 w-fit h-fit -inset-y-3 inset-x-5 z-10 bg-slate-50 dark:bg-black"
-          >
+            className="absolute px-2 w-fit h-fit -inset-y-3 inset-x-5 z-10 bg-slate-50 dark:bg-black">
             Name
           </label>
           <input
@@ -88,8 +87,7 @@ const ContactForm: FC<ContactFormProps> = () => {
         <div className="relative h-16 mb-8">
           <label
             htmlFor="email"
-            className="absolute px-2 w-fit h-fit -inset-y-3 inset-x-5 z-10 bg-slate-50 dark:bg-black"
-          >
+            className="absolute px-2 w-fit h-fit -inset-y-3 inset-x-5 z-10 bg-slate-50 dark:bg-black">
             Email
           </label>
           <input
@@ -104,8 +102,7 @@ const ContactForm: FC<ContactFormProps> = () => {
         <div className="relative h-48 mb-8">
           <label
             htmlFor="message"
-            className="absolute px-2 w-fit h-fit -inset-y-3 inset-x-5 z-10 bg-slate-50 dark:bg-black"
-          >
+            className="absolute px-2 w-fit h-fit -inset-y-3 inset-x-5 z-10 bg-slate-50 dark:bg-black">
             Message
           </label>
           <textarea
@@ -119,8 +116,7 @@ const ContactForm: FC<ContactFormProps> = () => {
         <button
           type="submit"
           className="btn inline-flex items-center gap-3 w-fit cursor-pointer mb-3"
-          disabled={submitting}
-        >
+          disabled={submitting}>
           {submitting && <VscLoading className="animate-spin" />} Send Message
         </button>
         {error && <span className="text-red-600">{error}</span>}

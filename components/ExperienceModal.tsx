@@ -3,6 +3,7 @@ import { Modal } from 'flowbite-react';
 
 import { TimelineItem } from './Timeliner';
 import TechStackIcon from './TechStackIcon';
+import Link from 'next/link';
 
 type ExperienceProps = {
   data: TimelineItem;
@@ -10,7 +11,11 @@ type ExperienceProps = {
   toggleShow: () => void;
 };
 
-const Experience: FC<ExperienceProps> = ({ data: { description, location, name, place, stack }, show, toggleShow }) => {
+const Experience: FC<ExperienceProps> = ({
+  data: { description, location, name, place, stack, url },
+  show,
+  toggleShow,
+}) => {
   const onClose = toggleShow;
 
   return (
@@ -18,7 +23,12 @@ const Experience: FC<ExperienceProps> = ({ data: { description, location, name, 
       <Modal.Header>
         <div>{name}</div>
         <div className="italic text-sm text-slate-500 dark:text-white">
-          {place} - {location}
+          {place} - {location}{' '}
+          {url && (
+            <Link href={url} target="_blank" className="ml-3 text-indigo-500">
+              {url}
+            </Link>
+          )}
         </div>
       </Modal.Header>
       <Modal.Body>
@@ -42,8 +52,12 @@ const Experience: FC<ExperienceProps> = ({ data: { description, location, name, 
           </div>
           <div className="pb-3 border-b-[1px] opacity-25" />
           <div className="text-base leading-relaxed text-gray-500 dark:text-gray-300">
-            <h3 className="text-md italic mb-2">Context</h3>
-            {description}
+            <h3 className="text-md italic mb-2">Key achievements</h3>
+            {description?.map((l, i) => (
+              <div key={i} className="italic">
+                - {l}
+              </div>
+            ))}
           </div>
         </div>
       </Modal.Body>

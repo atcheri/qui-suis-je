@@ -11,8 +11,7 @@ const Header: FC = () => {
       <Slide
         className="py-4 px-4 md:px-6 flex justify-between items-center h-15 backdrop-blur-md"
         direction="down"
-        triggerOnce={true}
-      >
+        triggerOnce={true}>
         <Fade triggerOnce={true}>
           <Logo />
           <ThemeSwitch />
