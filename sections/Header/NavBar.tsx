@@ -1,12 +1,12 @@
-import { FC } from "react";
-import { GoHome } from "react-icons/go";
-import { GiJourney } from "react-icons/gi";
-import { AiOutlineExperiment } from "react-icons/ai";
-import { MdAlternateEmail } from "react-icons/md";
-import Link from "next/link";
+import { FC } from 'react';
+import { GoHome } from 'react-icons/go';
+import { GiJourney } from 'react-icons/gi';
+import { AiOutlineExperiment } from 'react-icons/ai';
+import { MdAlternateEmail } from 'react-icons/md';
+import Link from 'next/link';
 
-import { SECTION } from "../constants";
-import { withTransition } from "../../styles/tailwind.classes";
+import { SECTION } from '../constants';
+import { withTransition } from '../../styles/tailwind.classes';
 
 const NavBar: FC = () => {
   const itemClass = `nav__item ${withTransition} text-indigo-800 hover:text-indigo-600 dark:text-white dark:hover:text-indigo-400`;

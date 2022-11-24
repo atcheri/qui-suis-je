@@ -1,9 +1,9 @@
-import { FC } from "react";
-import { Fade, Slide } from "react-awesome-reveal";
+import { FC } from 'react';
+import { Fade, Slide } from 'react-awesome-reveal';
 
-import ThemeSwitch from "./ThemeSwitch";
-import Logo from "../../components/Logo";
-import NavBar from "./NavBar";
+import ThemeSwitch from './ThemeSwitch';
+import Logo from '../../components/Logo';
+import NavBar from './NavBar';
 
 const Header: FC = () => {
   return (

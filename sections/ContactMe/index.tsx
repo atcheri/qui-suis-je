@@ -1,10 +1,10 @@
-import { FC } from "react";
+import { FC } from 'react';
 
-import AnchoredHeader from "../../components/AnchoredHeader";
-import ContactForm from "./ContactForm";
-import Section from "../../components/Section";
-import { SECTION } from "../constants";
-import ConnectWithMe from "./ConnectWithMe";
+import AnchoredHeader from '../../components/AnchoredHeader';
+import ContactForm from './ContactForm';
+import Section from '../../components/Section';
+import { SECTION } from '../constants';
+import ConnectWithMe from './ConnectWithMe';
 
 const ContactMe: FC = () => {
   return (

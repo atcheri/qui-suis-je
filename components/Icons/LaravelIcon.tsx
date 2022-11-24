@@ -1,15 +1,9 @@
-import { FC } from "react";
-import { IconProps } from "./types";
+import { FC } from 'react';
+import { IconProps } from './types';
 
 export const LaravelIcon: FC<IconProps> = ({ active = true, ...rest }) => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="2500"
-      height="1713"
-      viewBox="0 0 84.1 57.6"
-      {...rest}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1713" viewBox="0 0 84.1 57.6" {...rest}>
       <title>laravel</title>
       <path
         fill="#fb503b"

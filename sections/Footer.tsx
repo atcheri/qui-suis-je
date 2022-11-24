@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { FC } from "react";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { FC } from 'react';
 
 import {
   FlowbiteIcon,
@@ -13,8 +13,8 @@ import {
   TypescriptIcon,
   UKFlagIcon,
   VercelIcon,
-} from "../components/Icons";
-import Logo from "../components/Logo";
+} from '../components/Icons';
+import Logo from '../components/Logo';
 
 const Footer: FC = () => {
   const router = useRouter();
@@ -40,38 +40,22 @@ const Footer: FC = () => {
               </Link>
             </li>
             <li>
-              <Link
-                href="https://nextjs.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
                 <NextjsIcon className="dark:fill-white h-6 w-6 cursor-pointer" />
               </Link>
             </li>
             <li>
-              <Link
-                href="https://typescriptlang.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="https://typescriptlang.org/" target="_blank" rel="noopener noreferrer">
                 <TypescriptIcon className="h-6 w-6 cursor-pointer" />
               </Link>
             </li>
             <li>
-              <Link
-                href="https://tailwindcss.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
                 <TailwindIcon className="h-6 w-6 cursor-pointer" />
               </Link>
             </li>
             <li>
-              <Link
-                href="https://flowbite.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="https://flowbite.com/" target="_blank" rel="noopener noreferrer">
                 <FlowbiteIcon className="h-6 w-6 cursor-pointer" />
               </Link>
             </li>
@@ -81,34 +65,19 @@ const Footer: FC = () => {
           <h4>Choose your language</h4>
           <ul className="inline-flex gap-2">
             <li>
-              <UKFlagIcon
-                className="h-8 w-8 cursor-pointer"
-                onClick={() => changeLocale("en")}
-              />
+              <UKFlagIcon className="h-8 w-8 cursor-pointer" onClick={() => changeLocale('en')} />
             </li>
             <li>
-              <FranceFlagIcon
-                className="h-8 w-8 cursor-pointer"
-                onClick={() => changeLocale("fr")}
-              />
+              <FranceFlagIcon className="h-8 w-8 cursor-pointer" onClick={() => changeLocale('fr')} />
             </li>
             <li>
-              <JapanFlagIcon
-                className="h-8 w-8 cursor-pointer"
-                onClick={() => changeLocale("ja")}
-              />
+              <JapanFlagIcon className="h-8 w-8 cursor-pointer" onClick={() => changeLocale('ja')} />
             </li>
             <li>
-              <GermanyFlagIcon
-                className="h-8 w-8 cursor-pointer"
-                onClick={() => changeLocale("de")}
-              />
+              <GermanyFlagIcon className="h-8 w-8 cursor-pointer" onClick={() => changeLocale('de')} />
             </li>
             <li>
-              <ItalyFlagIcon
-                className="h-8 w-8 cursor-pointer"
-                onClick={() => changeLocale("it")}
-              />
+              <ItalyFlagIcon className="h-8 w-8 cursor-pointer" onClick={() => changeLocale('it')} />
             </li>
           </ul>
         </div>

@@ -7,7 +7,7 @@
   }
 
   &:before {
-    content: " ";
+    content: ' ';
     display: block;
     height: 90%;
     width: 100%;
@@ -26,7 +26,7 @@
 .stabylo {
   position: relative;
   &:before {
-    content: "";
+    content: '';
     background-color: #a5b4fc;
     position: absolute;
     width: calc(100% + 4px);

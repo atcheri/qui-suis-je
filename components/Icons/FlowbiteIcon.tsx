@@ -1,16 +1,9 @@
-import { FC } from "react";
-import { IconProps } from "./types";
+import { FC } from 'react';
+import { IconProps } from './types';
 
 export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
   return (
-    <svg
-      width="32"
-      height="33"
-      viewBox="0 0 32 33"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...rest}
-    >
+    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg" {...rest}>
       <path
         d="M24.5194 13.4429C24.4453 13.9533 24.1087 14.6468 23.7226 15.2497C23.2354 16.0105 22.4622 16.5433 21.5774 16.7283L17.6797 17.5434C17.0533 17.6744 16.4852 18.0022 16.0587 18.479L13.503 21.3357C13.0227 21.8725 12.687 21.7445 12.687 21.0244C12.6812 21.0511 11.4186 24.3072 14.7646 26.2371C16.0502 26.9787 17.9009 26.7122 19.1865 25.9707L25.9983 22.0416C28.5458 20.5722 30.3445 18.0863 30.9424 15.2089C30.966 15.095 30.9843 14.9808 31.004 14.8667L24.5194 13.4429Z"
         fill="url(#paint0_linear_2484_3243)"
@@ -54,8 +47,7 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="24.2701"
           x2="23.2075"
           y2="13.307"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stop-color="#1724C9" />
           <stop offset="1" stop-color="#1C64F2" />
         </linearGradient>
@@ -65,8 +57,7 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="10.9001"
           x2="19.0297"
           y2="2.64962"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stop-color="#1C64F2" />
           <stop offset="1" stop-color="#0092FF" />
         </linearGradient>
@@ -76,8 +67,7 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="5.52115"
           x2="3.67432"
           y2="6.3104"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stop-color="#0092FF" />
           <stop offset="1" stop-color="#45B2FF" />
         </linearGradient>
@@ -87,8 +77,7 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="29.1626"
           x2="26.5366"
           y2="26.1359"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stop-color="#1C64F2" />
           <stop offset="1" stop-color="#0092FF" />
         </linearGradient>
@@ -98,8 +87,7 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="16.1827"
           x2="15.2325"
           y2="24.4347"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stop-color="#1724C9" />
           <stop offset="1" stop-color="#1C64F2" />
         </linearGradient>
@@ -109,8 +97,7 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="22.1356"
           x2="31.007"
           y2="10.9345"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stop-color="#0092FF" />
           <stop offset="1" stop-color="#45B2FF" />
         </linearGradient>
@@ -120,8 +107,7 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="9.63067"
           x2="2.39054"
           y2="20.8063"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stop-color="#1C64F2" />
           <stop offset="1" stop-color="#0092FF" />
         </linearGradient>
@@ -131,8 +117,7 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="9.09912"
           x2="9.67768"
           y2="11.8044"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stop-color="#1724C9" />
           <stop offset="1" stop-color="#1C64F2" />
         </linearGradient>
@@ -142,8 +127,7 @@ export const FlowbiteIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           y1="21.8566"
           x2="13.3326"
           y2="32.2745"
-          gradientUnits="userSpaceOnUse"
-        >
+          gradientUnits="userSpaceOnUse">
           <stop stop-color="#0092FF" />
           <stop offset="1" stop-color="#45B2FF" />
         </linearGradient>

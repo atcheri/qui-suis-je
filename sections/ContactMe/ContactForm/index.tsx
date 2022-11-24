@@ -1,19 +1,19 @@
-import { Modal } from "flowbite-react";
-import { ChangeEvent, FC, FormEventHandler, useRef, useState } from "react";
-import { VscLoading } from "react-icons/vsc";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { Modal } from 'flowbite-react';
+import { ChangeEvent, FC, FormEventHandler, useRef, useState } from 'react';
+import { VscLoading } from 'react-icons/vsc';
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 
 type ContactFormProps = {};
 
 const emailRegex = new RegExp(
-  /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
+  /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/,
 );
 
 const ContactForm: FC<ContactFormProps> = () => {
-  const name = useRef("");
-  const email = useRef("");
-  const message = useRef("");
-  const [error, setError] = useState("");
+  const name = useRef('');
+  const email = useRef('');
+  const message = useRef('');
+  const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
 
@@ -23,21 +23,21 @@ const ContactForm: FC<ContactFormProps> = () => {
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
-    setError(() => "");
+    setError(() => '');
     setSubmitting(() => true);
     if (!emailRegex.test(email.current)) {
-      setError(() => "Invalid email address");
+      setError(() => 'Invalid email address');
       return;
     }
     if (!name.current || !message.current) {
-      setError(() => "Please fill in your name and the message");
+      setError(() => 'Please fill in your name and the message');
       return;
     }
-    const resp = await fetch("/api/email", {
+    const resp = await fetch('/api/email', {
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
-      method: "POST",
+      method: 'POST',
       body: JSON.stringify({
         name: name.current,
         email: email.current,
@@ -47,9 +47,7 @@ const ContactForm: FC<ContactFormProps> = () => {
     const { error } = await resp.json();
     setSubmitting(() => false);
     if (error) {
-      setError(
-        () => "Sorry, your message was not sent... Try to contact me via email"
-      );
+      setError(() => 'Sorry, your message was not sent... Try to contact me via email');
       return;
     }
     setMessageSent(() => true);

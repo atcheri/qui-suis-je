@@ -1,9 +1,9 @@
-import { FC } from "react";
-import { RiMailSendLine } from "react-icons/ri";
-import { TbBrandTelegram } from "react-icons/tb";
-import { CiLinkedin } from "react-icons/ci";
-import Link from "next/link";
-import { IconType } from "react-icons/lib";
+import { FC } from 'react';
+import { RiMailSendLine } from 'react-icons/ri';
+import { TbBrandTelegram } from 'react-icons/tb';
+import { CiLinkedin } from 'react-icons/ci';
+import Link from 'next/link';
+import { IconType } from 'react-icons/lib';
 
 type ContactCardProps = {
   Icon: IconType;
@@ -36,20 +36,20 @@ const ConnectWithMe: FC = () => {
         <ContactCard
           Icon={RiMailSendLine}
           title="Email"
-          link={{ href: "mailto:atcheri@gmail.com", text: "atcheri@gmail.com" }}
+          link={{ href: 'mailto:atcheri@gmail.com', text: 'atcheri@gmail.com' }}
         />
         <ContactCard
           Icon={TbBrandTelegram}
           title="Telegram"
-          link={{ href: "https://t.me/atchdayo", text: "atchdayo" }}
+          link={{ href: 'https://t.me/atchdayo', text: 'atchdayo' }}
         />
 
         <ContactCard
           Icon={CiLinkedin}
           title="Linkedin"
           link={{
-            href: "https://www.linkedin.com/in/endoatsuhiro/",
-            text: "endoatsuhiro",
+            href: 'https://www.linkedin.com/in/endoatsuhiro/',
+            text: 'endoatsuhiro',
           }}
         />
       </div>

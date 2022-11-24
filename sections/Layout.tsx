@@ -1,18 +1,15 @@
-import Head from "next/head";
-import { FC, PropsWithChildren } from "react";
+import Head from 'next/head';
+import { FC, PropsWithChildren } from 'react';
 
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from './Header';
+import Footer from './Footer';
 
 const Layout: FC<PropsWithChildren<{}>> = ({ children }) => {
   return (
     <>
       <Head>
         <title>Qui-sui je? Atsuhiro</title>
-        <meta
-          name="description"
-          content="Non, ce n'est pas un site de rencontre."
-        />
+        <meta name="description" content="Non, ce n'est pas un site de rencontre." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

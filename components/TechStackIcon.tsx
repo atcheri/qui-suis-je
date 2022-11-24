@@ -1,16 +1,16 @@
-import React, { ComponentType, FC } from "react";
-import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
+import React, { ComponentType, FC } from 'react';
+import { HiOutlineQuestionMarkCircle } from 'react-icons/hi2';
 
-import * as Icons from "./Icons";
-import { IconProps } from "./Icons/types";
-import { TechLang, TechTool } from "./Timeliner";
+import * as Icons from './Icons';
+import { IconProps } from './Icons/types';
+import { TechLang, TechTool } from './Timeliner';
 
 type TechStackIconProps = {
   lang: TechLang | TechTool;
 };
 
 const icons: Record<string, ComponentType<IconProps>> = {
-  "c++": Icons.CppIcon,
+  'c++': Icons.CppIcon,
   elm: Icons.ElmIcon,
   go: Icons.GolangIcon,
   nodejs: Icons.NodeJSIcon,
@@ -25,7 +25,7 @@ const icons: Record<string, ComponentType<IconProps>> = {
   flowbite: Icons.FlowbiteIcon,
   github: Icons.GithubIcon,
   gitlab: Icons.GitlabIcon,
-  "google-analytics": Icons.GoogleAnalyticsIcon,
+  'google-analytics': Icons.GoogleAnalyticsIcon,
   graphql: Icons.GraphqlIcon,
   heroku: Icons.HerokuIcon,
   jest: Icons.JestIcon,
@@ -39,7 +39,7 @@ const icons: Record<string, ComponentType<IconProps>> = {
   nextjs: Icons.NextjsIcon,
   postgres: Icons.PostgresIcon,
   react: Icons.TypescriptReactIcon,
-  "react-native": Icons.ReactNativeIcon,
+  'react-native': Icons.ReactNativeIcon,
   rest: Icons.RestAPIIcon,
   symfony: Icons.SymfonyIcon,
   tailwind: Icons.TailwindIcon,

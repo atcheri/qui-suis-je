@@ -1,15 +1,9 @@
-import { FC } from "react";
-import { IconProps } from "./types";
+import { FC } from 'react';
+import { IconProps } from './types';
 
 export const GraphqlIcon: FC<IconProps> = ({ active = true, ...rest }) => {
   return (
-    <svg
-      height="2500"
-      viewBox="20.8 4.2 358.4 391.6"
-      width="2179"
-      xmlns="http://www.w3.org/2000/svg"
-      {...rest}
-    >
+    <svg height="2500" viewBox="20.8 4.2 358.4 391.6" width="2179" xmlns="http://www.w3.org/2000/svg" {...rest}>
       <g fill="#e535ab">
         <path d="m57.468 302.66-14.376-8.3 160.15-277.38 14.376 8.3z" />
         <path d="m39.8 272.2h320.3v16.6h-320.3z" />

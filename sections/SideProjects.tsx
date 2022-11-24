@@ -1,8 +1,8 @@
-import { FC } from "react";
+import { FC } from 'react';
 
-import AnchoredHeader from "../components/AnchoredHeader";
-import Section from "../components/Section";
-import { SECTION } from "./constants";
+import AnchoredHeader from '../components/AnchoredHeader';
+import Section from '../components/Section';
+import { SECTION } from './constants';
 
 const SideProjects: FC = () => {
   return (
