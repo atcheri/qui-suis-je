@@ -13,9 +13,9 @@ const Punchline: FC = () => {
     case "fr":
       return (
         <h2 className="text-2xl sm:text-6xl font-bold">
-          Ma mission est de{" "}
-          <TypeWriter words={["develop", "grow"].map((k) => t(k) || k)} /> des
-          produits en livrant du code <HightLight>production</HightLight>
+          J'aide les entreprises à{" "}
+          <TypeWriter words={["develop", "grow"].map((k) => t(k) || k)} /> leur
+          activité avec du code de <HightLight>production</HightLight>
         </h2>
       );
     case "ja":
@@ -33,15 +33,15 @@ const Punchline: FC = () => {
     case "de":
       return (
         <h2 className="text-2xl sm:text-6xl font-bold">
-          Ma mission est de{" "}
-          <TypeWriter words={["develop", "grow"].map((k) => t(k) || k)} /> des
-          produits en livrant du code <HightLight>production</HightLight>
+          J'aide les entreprises à
+          <TypeWriter words={["develop", "grow"].map((k) => t(k) || k)} /> leur
+          activité en livrant du code <HightLight>production</HightLight>
         </h2>
       );
     case "it":
       return (
         <h2 className="text-2xl sm:text-6xl font-bold">
-          Spedisco il codice di <HightLight>produzione</HightLight> e aiuto le
+          Spedisco codice di <HightLight>produzione</HightLight> e aiuto le
           aziende a{" "}
           <TypeWriter words={["develop", "grow"].map((k) => t(k) || k)} />
         </h2>

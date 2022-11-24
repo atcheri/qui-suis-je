@@ -33,3 +33,9 @@ export { TypescriptIcon } from "./TypescriptIcon";
 export { TypescriptReactIcon } from "./TypescriptReactIcon";
 export { VercelIcon } from "./VercelIcon";
 export { VuejsIcon } from "./VuejsIcon";
+
+export { FranceFlagIcon } from "./FranceFlagIcon";
+export { GermanyFlagIcon } from "./GermanyFlagIcon";
+export { ItalyFlagIcon } from "./ItalyFlagIcon";
+export { JapanFlagIcon } from "./JapanFlagIcon";
+export { UKFlagIcon } from "./UKFlagIcon";

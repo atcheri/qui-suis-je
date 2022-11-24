@@ -48,9 +48,7 @@ const Hero: FC = () => {
             </Slide>
           </div>
           <Fade delay={3 * delayUnit}>
-            <Slide direction="right" delay={3 * delayUnit}>
-              <CodeSnippets />
-            </Slide>
+            <CodeSnippets />
           </Fade>
         </div>
         <Fade delay={5 * delayUnit}>
