@@ -17,6 +17,7 @@ export type TechLang = 'go' | 'typescript' | 'c++' | 'solidity' | 'nodejs' | 'py
 export type TechTool =
   | 'apollo'
   | 'aws'
+  | 'cypress'
   | 'docker'
   | 'gitlab'
   | 'graphql'
@@ -29,6 +30,7 @@ export type TechTool =
   | 'mysql'
   | 'netlify'
   | 'nextjs'
+  | 'openapi'
   | 'postgres'
   | 'react'
   | 'react-native'
@@ -45,6 +47,8 @@ type TechStack = {
 export type TimelineItem = {
   /** Job title */
   name: string;
+  /** Job title */
+  type: 'study' | 'work';
   /** Name of the company or client */
   place: string;
   /** City or country of the company or client */

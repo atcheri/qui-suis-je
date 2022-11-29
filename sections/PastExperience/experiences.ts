@@ -2,19 +2,8 @@ import { TimelineItem } from '../../components/Timeliner';
 
 export const studies: TimelineItem[] = [
   {
-    name: 'mechanical engineering',
-    place: 'Université Pierre et Marie Curie',
-    sector: 'Master 2',
-    location: 'Paris',
-    period: {
-      year: '2004 ~ 2006',
-      from: 'September',
-      to: 'June',
-    },
-    content: 'lorem ipsum',
-  },
-  {
-    name: 'Information Technology in finance',
+    name: 'Applied IT and Statistics in Finance',
+    type: 'study',
     place: 'Université Pierre et Marie Curie',
     sector: 'Master 2',
     location: 'Paris',
@@ -23,13 +12,38 @@ export const studies: TimelineItem[] = [
       from: 'September',
       to: 'June',
     },
-    content: 'lorem ipsum',
+    content: 'Trained in building simulation and analysing financial instruments prices movements',
+    description: [
+      'Modelling Simulation of financial data',
+      'Quantitative analyse of random risk',
+      'https://www.educaedu.fr/master-de-sciences-et-technologies-mention--sciences-et-management-specialite--statistique-et-finance-master-15163.html',
+    ],
+  },
+  {
+    name: 'Mechanical Engineering - Aérodynamique et Aéroacoustique',
+    type: 'study',
+    place: 'Université Pierre et Marie Curie',
+    sector: 'Master 2',
+    location: 'Paris',
+    period: {
+      year: '2004 ~ 2006',
+      from: 'September',
+      to: 'June',
+    },
+    content: 'Trained in the theoretical and numerical tools necessary for the study of highly complex dynamic flows',
+    description: [
+      'Hydrodynamic Modelling and Simulation',
+      'Aerodynamics and Aero-acoustics',
+      'Fluid Mechanics',
+      'https://sciences.sorbonne-universite.fr/formation-sciences/masters/master-de-mecanique/parcours-mecanique-des-fluides-fondements-et',
+    ],
   },
 ];
 
 export const works: TimelineItem[] = [
   {
     name: 'Full-Stack Software Engineer',
+    type: 'work',
     place: 'Affinidi GMBH',
     url: 'https://affinidi.com',
     sector: 'Permanent',
@@ -42,12 +56,32 @@ export const works: TimelineItem[] = [
     content: 'Building privacy preserving tools',
     stack: {
       langs: ['go', 'typescript'],
-      tools: ['react', 'jest', 'docker', 'kubernetes', 'aws', 'rest', 'mongo', 'mysql', 'postgres', 'gitlab'],
+      tools: [
+        'react',
+        'jest',
+        'cypress',
+        'openapi',
+        'docker',
+        'kubernetes',
+        'aws',
+        'rest',
+        'mongo',
+        'mysql',
+        'postgres',
+        'gitlab',
+      ],
     },
-    description: ['lorem ipsum', 'lorem ipsum', 'lorem ipsum'],
+    description: [
+      'An open-source command line interface: https://github.com/affinidi/affinidi-cli',
+      'A rules-engine api using openapi: https://rules-manager.prod.affinity-project.org/api-docs/v2',
+      'A web user-interface using the micro frontend architecture: https://console.affinidi.com/',
+      'Built an end to end (E2E) tests suite with cypress',
+      'Integrated a loan eligibility API in the Indian market',
+    ],
   },
   {
     name: 'Front-End Engineer',
+    type: 'work',
     place: 'RealT',
     url: 'https://realt.co/',
     sector: 'Freelance',
@@ -69,6 +103,7 @@ export const works: TimelineItem[] = [
   },
   {
     name: 'Front-End Engineer',
+    type: 'work',
     place: 'Sestrel',
     sector: 'Freelance',
     location: 'Remote',
@@ -89,6 +124,7 @@ export const works: TimelineItem[] = [
   },
   {
     name: 'Full-Stack Software Engineer',
+    type: 'work',
     place: 'Actineo GMBH',
     url: 'https://www.actineo.de',
     sector: 'Permanent',
@@ -110,6 +146,7 @@ export const works: TimelineItem[] = [
   },
   {
     name: 'Full-Stack Software Engineer',
+    type: 'work',
     place: 'Investbook.fr SAS',
     url: 'https://www.investbook.fr',
     sector: 'Permanent',
@@ -128,6 +165,7 @@ export const works: TimelineItem[] = [
   },
   {
     name: 'Full-Stack Software Engineer',
+    type: 'work',
     place: 'TSA SAS',
     sector: 'Permanent',
     location: 'Paris',
@@ -145,6 +183,7 @@ export const works: TimelineItem[] = [
   },
   {
     name: 'Software Engineer',
+    type: 'work',
     place: 'CFM SA',
     url: 'https://www.cfm.fr',
     sector: 'Permanent',
@@ -167,6 +206,7 @@ export const works: TimelineItem[] = [
   },
   {
     name: 'Junior Software Engineer',
+    type: 'work',
     place: 'CFM SA',
     url: 'https://www.cfm.fr',
     sector: 'Permanent',

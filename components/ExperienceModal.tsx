@@ -12,7 +12,7 @@ type ExperienceProps = {
 };
 
 const Experience: FC<ExperienceProps> = ({
-  data: { description, location, name, place, stack, url },
+  data: { description, location, name, place, stack, type, url },
   show,
   toggleShow,
 }) => {
@@ -34,25 +34,29 @@ const Experience: FC<ExperienceProps> = ({
       <Modal.Body>
         <div className="space-y-6">
           <div className="text-base leading-relaxed text-gray-500 dark:text-gray-300">
-            <h3 className="text-md italic mb-2">Tech Stack</h3>
-            <ul className="flex gap-2 mb-3">
-              {stack?.langs.map((l) => (
-                <li key={l}>
-                  <TechStackIcon lang={l} />
-                </li>
-              ))}
-            </ul>
-            <ul className="flex gap-2">
-              {stack?.tools.map((t) => (
-                <li key={t}>
-                  <TechStackIcon lang={t} />
-                </li>
-              ))}
-            </ul>
+            {stack && (
+              <>
+                <h3 className="text-md italic mb-2">Tech Stack</h3>
+                <ul className="flex gap-2 mb-3">
+                  {stack.langs.map((l) => (
+                    <li key={l}>
+                      <TechStackIcon lang={l} />
+                    </li>
+                  ))}
+                </ul>
+                <ul className="flex gap-2">
+                  {stack.tools.map((t) => (
+                    <li key={t}>
+                      <TechStackIcon lang={t} />
+                    </li>
+                  ))}
+                </ul>
+                <div className="pb-3 border-b-[1px] opacity-25" />
+              </>
+            )}
           </div>
-          <div className="pb-3 border-b-[1px] opacity-25" />
           <div className="text-base leading-relaxed text-gray-500 dark:text-gray-300">
-            <h3 className="text-md italic mb-2">Key achievements</h3>
+            <h3 className="text-md italic mb-2">{type === 'work' ? 'Key achievements' : 'Content of study'}</h3>
             {description?.map((l, i) => (
               <div key={i} className="italic">
                 - {l}

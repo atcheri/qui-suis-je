@@ -21,6 +21,7 @@ const icons: Record<string, ComponentType<IconProps>> = {
   //
   aws: Icons.AwsIcon,
   apollo: Icons.ApolloGraphqlIcon,
+  cypress: Icons.CypressIcon,
   docker: Icons.DockerIcon,
   elastic: Icons.ElasticSearchIcon,
   flowbite: Icons.FlowbiteIcon,
@@ -38,6 +39,7 @@ const icons: Record<string, ComponentType<IconProps>> = {
   mysql: Icons.MysqlIcon,
   netlify: Icons.NetlifyIcon,
   nextjs: Icons.NextjsIcon,
+  openapi: Icons.OpenApiIcon,
   postgres: Icons.PostgresIcon,
   react: Icons.TypescriptReactIcon,
   'react-native': Icons.ReactNativeIcon,

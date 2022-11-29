@@ -1,6 +1,7 @@
 export { AwsIcon } from './AwsIcon';
 export { ApolloGraphqlIcon } from './ApolloGraphqlIcon';
 export { CppIcon } from './CppIcon';
+export { CypressIcon } from './CypressIcon';
 export { DockerIcon } from './DockerIcon';
 export { ElasticSearchIcon } from './ElasticSearchIcon';
 export { ElmIcon } from './ElmIcon';
@@ -21,6 +22,7 @@ export { MysqlIcon } from './MysqlIcon';
 export { NetlifyIcon } from './NetlifyIcon';
 export { NextjsIcon } from './NextjsIcon';
 export { NodeJSIcon } from './NodeJSIcon';
+export { OpenApiIcon } from './OpenApiIcon';
 export { PhpIcon } from './PhpIcon';
 export { PostgresIcon } from './PostgresIcon';
 export { PythonIcon } from './PythonIcon';
