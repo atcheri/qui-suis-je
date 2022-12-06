@@ -25,7 +25,7 @@ const Footer: FC = () => {
   };
   return (
     <footer className="p-4 md:px-6 md:py-8 my-20">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center flex-col gap-4 md:flex-row justify-between">
         <Logo />
         <div className="flex flex-col items-center gap-3">
           <h4>Site built with</h4>
@@ -62,7 +62,7 @@ const Footer: FC = () => {
         </div>
         <div className="flex flex-col items-center gap-3">
           <h4>Choose your language</h4>
-          <ul className="inline-flex gap-2">
+          <ul className="inline-flex gap-2 flex-wrap">
             <li>
               <UKFlagIcon className="h-8 w-8 cursor-pointer" onClick={() => changeLocale('en')} />
             </li>
