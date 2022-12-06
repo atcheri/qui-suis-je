@@ -41,3 +41,5 @@ export { GermanyFlagIcon } from './GermanyFlagIcon';
 export { ItalyFlagIcon } from './ItalyFlagIcon';
 export { JapanFlagIcon } from './JapanFlagIcon';
 export { UKFlagIcon } from './UKFlagIcon';
+
+export { ItsutsuInazumaIcon } from './ItsutsuInazumaIcon';
