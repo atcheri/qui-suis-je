@@ -15,12 +15,12 @@ const Hero: FC = () => {
   const { t } = useTranslation('common');
 
   return (
-    <section id={`#${SECTION.HOME}`}>
+    <section id={`#${SECTION.HOME}`} className="h-[100vh]">
       <Link href={`/#${SECTION.HOME}`} id={SECTION.HOME} className="opacity-0">
         {' '}
         _
       </Link>
-      <div className="flex flex-col justify-center items-center space-y-10 mt-12 sm:mt-24 md:mt-32">
+      <div className="flex flex-col justify-center items-center gap-20 space-y-10 mt-12 sm:mt-24 md:mt-32">
         <div className="grid md:grid-cols-2 gap-3 md:gap-6">
           <div className="flex flex-col">
             <Slide direction="down" delay={delayUnit}>
@@ -33,9 +33,9 @@ const Hero: FC = () => {
                 <button className="btn outline" type="button" onClick={() => {}}>
                   {t('download')} {t('resume')}
                 </button>
-                <button className="btn" type="button" onClick={() => {}}>
+                <Link href={`#${SECTION.ABOUT_ME}`} className="btn">
                   {t('about-me')}
-                </button>
+                </Link>
               </Fade>
             </Slide>
           </div>
@@ -44,7 +44,7 @@ const Hero: FC = () => {
           </Fade>
         </div>
         <Fade delay={5 * delayUnit}>
-          <Link href={`#${SECTION.PAST_EXPERIENCE}`}>
+          <Link href={`/#${SECTION.ABOUT_ME}`}>
             <BsMouse className={`${withTransition} animate-bounce h-8 w-8 cursor-pointer hover:text-indigo-500`} />
           </Link>
         </Fade>

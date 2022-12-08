@@ -3,6 +3,7 @@ import { GoHome } from 'react-icons/go';
 import { GiJourney } from 'react-icons/gi';
 import { AiOutlineExperiment } from 'react-icons/ai';
 import { MdAlternateEmail } from 'react-icons/md';
+import { BsPersonDash } from 'react-icons/bs';
 import Link from 'next/link';
 
 import { SECTION } from '../constants';
@@ -17,12 +18,9 @@ const NavBar: FC = () => {
         <Link href={`#${SECTION.HOME}`} className={itemClass}>
           <GoHome />
         </Link>
-        {/* <Link
-          href={`/#${SECTION.ABOUT_ME}`}
-          className={itemClass}
-        >
+        <Link href={`/#${SECTION.ABOUT_ME}`} className={itemClass}>
           <BsPersonDash />
-        </Link> */}
+        </Link>
         <Link href={`/#${SECTION.PAST_EXPERIENCE}`} className={itemClass}>
           <GiJourney />
         </Link>

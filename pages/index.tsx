@@ -6,6 +6,7 @@ import { FC, useCallback, useEffect } from 'react';
 import { SECTION } from '../sections/constants';
 import ContactMe from '../sections/ContactMe';
 import Hero from '../sections/Hero';
+import AboutMe from '../sections/AboutMe';
 import Layout from '../sections/Layout';
 import PastExperience from '../sections/PastExperience';
 import SideProjects from '../sections/SideProjects';
@@ -47,6 +48,7 @@ const Home: FC = () => {
   return (
     <Layout>
       <Hero />
+      <AboutMe />
       <PastExperience />
       <SideProjects />
       <ContactMe />

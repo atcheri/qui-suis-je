@@ -37,14 +37,14 @@ const Experience: FC<ExperienceProps> = ({
             {stack && (
               <>
                 <h3 className="text-md italic mb-2">Tech Stack</h3>
-                <ul className="flex gap-2 mb-3">
+                <ul className="flex flex-wrap gap-2 mb-3">
                   {stack.langs.map((l) => (
                     <li key={l}>
                       <TechStackIcon lang={l} />
                     </li>
                   ))}
                 </ul>
-                <ul className="flex gap-2">
+                <ul className="flex flex-wrap gap-2">
                   {stack.tools.map((t) => (
                     <li key={t}>
                       <TechStackIcon lang={t} />
