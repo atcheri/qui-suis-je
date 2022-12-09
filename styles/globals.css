@@ -4,6 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Alice';
+  src: url('/fonts/Alice/Alice.eot?') format('eot'), url('/fonts/Alice/Alice.woff') format('woff'),
+    url('/fonts/Alice/Alice.ttf') format('truetype'), url('/fonts/Alice/Alice.svg#Alice') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer base {
   body {
     @apply bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100;
