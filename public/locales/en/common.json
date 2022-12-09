@@ -6,6 +6,10 @@
   "hi": "Hi!",
   "how-i-describe-myself": "",
   "resume": "CV",
-  "who-i-am": "Hi, I'm Atch",
-  "what-i-do": "What I'm doing usualy"
+  "what-i-do": {
+    "first": "Solving problems at work during the day.",
+    "second": "Then, at home.",
+    "third": "Finally at the climbing gym."
+  },
+  "who-i-am": "Hi, I'm Atch"
 }

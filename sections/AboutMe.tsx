@@ -28,7 +28,11 @@ const AboutMe: FC = () => {
           <Pana className="w-48 h-48 mb-3 rounded-full shadow-lg" />
           <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">{t('who-i-am')}</h5>
           <span className="text-sm text-gray-500 dark:text-gray-400">{t('how-i-describe-myself')}</span>
-          <p>{t('what-i-do')}</p>
+          <div className="text-center px-10">
+            <p>{t('what-i-do.first')}</p>
+            <p>{t('what-i-do.second')}</p>
+            <p>{t('what-i-do.third')}</p>
+          </div>
           <div className="flex gap-3 mt-4 space-x-3 md:mt-6">
             <Link href="https://www.linkedin.com/in/endoatsuhiro/" target="_blank">
               <CiLinkedin className="h-7 w-7 text-blue-500" />

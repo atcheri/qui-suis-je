@@ -6,6 +6,10 @@
   "hi": "どうも",
   "how-i-describe-myself": "",
   "resume": "履歴書",
-  "who-i-am": "アッチです",
-  "what-i-do": "What I'm doing usualy"
+  "what-i-do": {
+    "first": "日中は職場で問題解決。",
+    "second": "仕事後は勉強。",
+    "third": "終わりにボルダリングジムで課題解き."
+  },
+  "who-i-am": "アッチです"
 }

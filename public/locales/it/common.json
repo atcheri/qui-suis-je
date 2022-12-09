@@ -6,6 +6,10 @@
   "hi": "Ciao",
   "how-i-describe-myself": "",
   "resume": "CV",
-  "who-i-am": "Ciao, sono Atch",
-  "what-i-do": "Que facio ogni giorno"
+  "what-i-do": {
+    "first": "Durante il giorno risolvo i problemi di lavoro.",
+    "second": "Poi a casa.",
+    "third": "E infine alla palestra di arrampicata."
+  },
+  "who-i-am": "Ciao, sono Atch"
 }

@@ -6,6 +6,10 @@
   "hi": "Bonjour",
   "how-i-describe-myself": "",
   "resume": "CV",
-  "who-i-am": "Bonjour à tous",
-  "what-i-do": "Ce que je fais d'habitude"
+  "what-i-do": {
+    "first": "En journée, je résous des problèmes au travail.",
+    "second": "Puis à la maison.",
+    "third": "Et enfin à la salle de Bloc."
+  },
+  "who-i-am": "Je suis Atch"
 }
