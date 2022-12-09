@@ -42,8 +42,8 @@ export const CypressIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           x2="39.8226"
           y2="17.9723"
           gradientUnits="userSpaceOnUse">
-          <stop offset="0.0939" stop-color="#58D09E"></stop>
-          <stop offset="0.9883" stop-color="#58D09E" stop-opacity="0"></stop>
+          <stop offset="0.0939" stopColor="#58D09E"></stop>
+          <stop offset="0.9883" stopColor="#58D09E" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint1_linear_1375_10683"
@@ -52,8 +52,8 @@ export const CypressIcon: FC<IconProps> = ({ active = true, ...rest }) => {
           x2="34.638"
           y2="44.2092"
           gradientUnits="userSpaceOnUse">
-          <stop offset="0.0774" stop-color="#58D09E"></stop>
-          <stop offset="0.7617" stop-color="#1B1E2E"></stop>
+          <stop offset="0.0774" stopColor="#58D09E"></stop>
+          <stop offset="0.7617" stopColor="#1B1E2E"></stop>
         </linearGradient>
       </defs>
     </svg>
