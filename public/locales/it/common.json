@@ -2,6 +2,12 @@
   "about-me": "Su di me",
   "develop": "sviluppare",
   "download": "Scaricare",
+  "experiences": {
+    "education": "Studi",
+    "until-now": "Fino ad ora",
+    "what-i-studied-where-i-worked": "Cosa ho studiato, dove ho lavorato",
+    "work": "Lavori"
+  },
   "grow": "crescere",
   "hi": "Ciao",
   "how-i-describe-myself": "",

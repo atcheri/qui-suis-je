@@ -2,6 +2,12 @@
   "about-me": "自己紹介",
   "develop": "開発",
   "download": "",
+  "experiences": {
+    "education": "学歴",
+    "until-now": "今までの経験",
+    "what-i-studied-where-i-worked": "職歴,また学歴",
+    "work": "職歴"
+  },
   "grow": "成長",
   "hi": "どうも",
   "how-i-describe-myself": "",

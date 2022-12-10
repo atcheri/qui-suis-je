@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import { SlGraduation } from 'react-icons/sl';
 import { MdOutlineMapsHomeWork } from 'react-icons/md';
+import { useTranslation } from 'react-i18next';
 
 import Timeliner from '../../components/Timeliner';
 import AnchoredHeader from '../../components/AnchoredHeader';
@@ -9,12 +10,17 @@ import Section from '../../components/Section';
 import { SECTION } from '../constants';
 
 const PastExperience: FC = () => {
+  const { t } = useTranslation('common');
   const [expType, setExpType] = useState<'study' | 'work'>('work');
 
   return (
     <Section id={SECTION.PAST_EXPERIENCE}>
       <div className="flex flex-col items-center m-8">
-        <AnchoredHeader anchor={SECTION.PAST_EXPERIENCE} title="Until now" subTitle="What I studied, where I worked" />
+        <AnchoredHeader
+          anchor={SECTION.PAST_EXPERIENCE}
+          title={t('experiences.until-now')}
+          subTitle={t('experiences.what-i-studied-where-i-worked')}
+        />
       </div>
       <div className="text-slate-600 dark:text-slate-100">
         <ul className="flex justify-evenly text-lg font-extrabold">
@@ -22,12 +28,12 @@ const PastExperience: FC = () => {
             className={`${expType !== 'work' && 'border-opacity-0'} underlined flex items-center gap-2 cursor-pointer`}
             onClick={() => setExpType('work')}>
             <MdOutlineMapsHomeWork />
-            Works
+            {t('experiences.work')}
           </li>
           <li
             className={`${expType !== 'study' && 'border-opacity-0'} underlined flex items-center gap-2 cursor-pointer`}
             onClick={() => setExpType('study')}>
-            <SlGraduation /> <span>Education</span>
+            <SlGraduation /> <span>{t('experiences.education')}</span>
           </li>
         </ul>
         <div className="flex justify-center">

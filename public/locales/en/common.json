@@ -2,6 +2,12 @@
   "about-me": "About me",
   "develop": "develop",
   "download": "Download",
+  "experiences": {
+    "education": "Education",
+    "until-now": "Until now",
+    "what-i-studied-where-i-worked": "What I studied, where I worked",
+    "work": "Works"
+  },
   "grow": "grow",
   "hi": "Hi!",
   "how-i-describe-myself": "",
