@@ -12,6 +12,10 @@
   "hi": "どうも",
   "how-i-describe-myself": "",
   "resume": "履歴書",
+  "projects": {
+    "title": "サイドプロジェクト",
+    "sub-title": "仕事以外の開発。最近習った事"
+  },
   "what-i-do": {
     "first": "日中は職場で問題解決。",
     "second": "仕事後は勉強。",

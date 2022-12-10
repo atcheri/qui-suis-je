@@ -11,6 +11,10 @@
   "grow": "crescere",
   "hi": "Ciao",
   "how-i-describe-myself": "",
+  "projects": {
+    "title": "Fouri dal lavoro",
+    "sub-title": "Cosa ho imparato e lavorato recentemente"
+  },
   "resume": "CV",
   "what-i-do": {
     "first": "Durante il giorno risolvo i problemi di lavoro.",

@@ -11,6 +11,10 @@
   "grow": "grow",
   "hi": "Hi!",
   "how-i-describe-myself": "",
+  "projects": {
+    "title": "Outside of work",
+    "sub-title": "What I've recently learned and worked on"
+  },
   "resume": "CV",
   "what-i-do": {
     "first": "Solving problems at work during the day.",
