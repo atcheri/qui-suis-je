@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import {
   FlowbiteIcon,
@@ -17,6 +18,7 @@ import {
 import Logo from '../components/Logo';
 
 const Footer: FC = () => {
+  const { t } = useTranslation('common');
   const router = useRouter();
   const { pathname, asPath, query } = router;
 
@@ -28,7 +30,7 @@ const Footer: FC = () => {
       <div className="flex items-center flex-col gap-4 md:flex-row justify-between">
         <Logo />
         <div className="flex flex-col items-center gap-3">
-          <h4>Site built with</h4>
+          <h4>{t('footer.site-built-with')}</h4>
           <ul className="inline-flex gap-2">
             <li>
               <Link
@@ -61,7 +63,7 @@ const Footer: FC = () => {
           </ul>
         </div>
         <div className="flex flex-col items-center gap-3">
-          <h4>Choose your language</h4>
+          <h4>{t('footer.choose-language')}</h4>
           <ul className="inline-flex gap-2 flex-wrap">
             <li>
               <UKFlagIcon className="h-8 w-8 cursor-pointer" onClick={() => changeLocale('en')} />

@@ -22,6 +22,10 @@
     "what-i-studied-where-i-worked": "Cosa ho studiato, dove ho lavorato",
     "work": "Lavori"
   },
+  "footer": {
+    "site-built-with": "Site sito realizzato con",
+    "choose-language": "Scegliere la lingua"
+  },
   "grow": "crescere",
   "hi": "Ciao",
   "how-i-describe-myself": "",

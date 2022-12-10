@@ -22,6 +22,10 @@
     "what-i-studied-where-i-worked": "職歴,また学歴",
     "work": "職歴"
   },
+  "footer": {
+    "site-built-with": "このサイトは以下のツールを使っています",
+    "choose-language": "言語選択"
+  },
   "grow": "成長",
   "hi": "どうも",
   "how-i-describe-myself": "",
