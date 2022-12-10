@@ -1,5 +1,19 @@
 {
   "about-me": "À propos",
+  "contact": {
+    "title": "Intéressant?",
+    "sub-title": "N'hésitez pas à me contacter",
+    "form": {
+      "email": "Email",
+      "header": "Décrivez moi votre besoin",
+      "name": "Nom/Prénom",
+      "message": "Contenu",
+      "send": "Envoyer",
+      "thank": "Merci",
+      "message-sent": "Message envoyé avec succès!",
+      "close": "Fermer"
+    }
+  },
   "develop": "déveloper",
   "download": "Télécharger",
   "experiences": {

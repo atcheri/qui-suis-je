@@ -1,5 +1,19 @@
 {
   "about-me": "自己紹介",
+  "contact": {
+    "title": "問い合わせ",
+    "sub-title": "もしよろしければ、SNSかフォームなどをお使いください",
+    "form": {
+      "email": "eメール",
+      "header": "ご要件をどうぞ",
+      "name": "氏名",
+      "message": "内容",
+      "send": "送信",
+      "thank": "ありがとうございます",
+      "message-sent": "メッセージを送信しました",
+      "close": "閉じる"
+    }
+  },
   "develop": "開発",
   "download": "",
   "experiences": {

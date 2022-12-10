@@ -1,5 +1,19 @@
 {
   "about-me": "Su di me",
+  "contact": {
+    "title": "Contatto",
+    "sub-title": "Non esitare a contattarmi",
+    "form": {
+      "email": "E-mail",
+      "header": "Come posso aiutare",
+      "name": "Nome",
+      "message": "Messaggio",
+      "send": "Inviare",
+      "thank": "Grazie",
+      "message-sent": "Messaggio inviato con successo!",
+      "close": "Chiudere"
+    }
+  },
   "develop": "sviluppare",
   "download": "Scaricare",
   "experiences": {

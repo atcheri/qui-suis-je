@@ -2,6 +2,7 @@ import { Modal } from 'flowbite-react';
 import { ChangeEvent, FC, FormEventHandler, useRef, useState } from 'react';
 import { VscLoading } from 'react-icons/vsc';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
+import { useTranslation } from 'react-i18next';
 
 type ContactFormProps = {};
 
@@ -10,6 +11,7 @@ const emailRegex = new RegExp(
 );
 
 const ContactForm: FC<ContactFormProps> = () => {
+  const { t } = useTranslation('common');
   const name = useRef('');
   const email = useRef('');
   const message = useRef('');
@@ -68,12 +70,12 @@ const ContactForm: FC<ContactFormProps> = () => {
   return (
     <>
       <form className="flex flex-col" onSubmit={handleSubmit}>
-        <h3 className="text-center text-2xl mb-2">Explain me your need</h3>
+        <h3 className="text-center text-2xl mb-2">{t('contact.form.header')}</h3>
         <div className="relative h-16 mb-8">
           <label
             htmlFor="name"
             className="absolute px-2 w-fit h-fit -inset-y-3 inset-x-5 z-10 bg-slate-50 dark:bg-black">
-            Name
+            {t('contact.form.name')}
           </label>
           <input
             type="text"
@@ -88,7 +90,7 @@ const ContactForm: FC<ContactFormProps> = () => {
           <label
             htmlFor="email"
             className="absolute px-2 w-fit h-fit -inset-y-3 inset-x-5 z-10 bg-slate-50 dark:bg-black">
-            Email
+            {t('contact.form.email')}
           </label>
           <input
             type="email"
@@ -103,7 +105,7 @@ const ContactForm: FC<ContactFormProps> = () => {
           <label
             htmlFor="message"
             className="absolute px-2 w-fit h-fit -inset-y-3 inset-x-5 z-10 bg-slate-50 dark:bg-black">
-            Message
+            {t('contact.form.message')}
           </label>
           <textarea
             name="message"
@@ -117,21 +119,21 @@ const ContactForm: FC<ContactFormProps> = () => {
           type="submit"
           className="btn inline-flex items-center gap-3 w-fit cursor-pointer mb-3"
           disabled={submitting}>
-          {submitting && <VscLoading className="animate-spin" />} Send Message
+          {submitting && <VscLoading className="animate-spin" />} {t('contact.form.send')}
         </button>
         {error && <span className="text-red-600">{error}</span>}
       </form>
       <Modal show={messageSent} onClose={onClose}>
-        <Modal.Header>Thank you!</Modal.Header>
+        <Modal.Header>{t('contact.form.thank-you')}</Modal.Header>
         <Modal.Body>
           <div className="flex flex-col justify-center items-center">
             <IoMdCheckmarkCircleOutline className="h-24 w-24 text-green-400" />
-            <span className="my-6 text-2xl">Message successfully sent!</span>
+            <span className="my-6 text-2xl">{t('contact.form.message-sent')}</span>
           </div>
         </Modal.Body>
         <Modal.Footer>
           <button className="btn" onClick={onClose}>
-            Close
+            {t('contact.form.close')}
           </button>
         </Modal.Footer>
       </Modal>

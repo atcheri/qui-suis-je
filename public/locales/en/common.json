@@ -1,5 +1,19 @@
 {
   "about-me": "About me",
+  "contact": {
+    "title": "Get in touch",
+    "sub-title": "Did this page convince you to drop me a message?",
+    "form": {
+      "email": "Email",
+      "header": "Explain me your need",
+      "name": "Name",
+      "message": "Message",
+      "send": "Send message",
+      "thank": "Thank you",
+      "message-sent": "Message successfully sent!",
+      "close": "Close"
+    }
+  },
   "develop": "develop",
   "download": "Download",
   "experiences": {
