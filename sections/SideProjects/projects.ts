@@ -28,6 +28,6 @@ export const projects: Project[] = [
     title: 'Analog-clock',
     imageUrl: '/projects/analog-clock.screenshot.png',
     description: 'An Wall embeded analog clock in neumorphism',
-    url: 'https://analog-clock.online',
+    url: 'https://analog-clock.atsuhiro.online',
   },
 ];

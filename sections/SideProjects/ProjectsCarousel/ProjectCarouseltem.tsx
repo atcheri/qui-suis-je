@@ -18,7 +18,8 @@ const ProjectCarouseltem: FC<ProjectCarouseltemProps> = ({ project }) => {
       <p className="">{project.description}</p>
       <a href={project.url} target="_blank" rel="noreferrer">
         <Button color="rgb(81 69 205 / var(--tw-bg-opacity))" className="bg-indigo-700" outline={true}>
-          {t('discover')} <VscLinkExternal />
+          <span className="mr-2">{t('projects.discover')}</span>
+          <VscLinkExternal />
         </Button>
       </a>
     </div>
