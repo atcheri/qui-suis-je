@@ -13,8 +13,15 @@ export const projects: Project[] = [
     id: i++,
     title: 'Polyglotify',
     imageUrl: '',
-    description: 'Localization API as a Service',
+    description: 'Localization as a Service',
     url: 'https://polyglotify.online',
+  },
+  {
+    id: i++,
+    title: 'Polyglotify API',
+    imageUrl: '/projects/poliglotify-api.online.screenshot.png',
+    description: 'Localization OpenAPI',
+    url: 'https://poliglotify.online/api/docs/',
   },
   {
     id: i++,
@@ -28,6 +35,6 @@ export const projects: Project[] = [
     title: 'Analog-clock',
     imageUrl: '/projects/analog-clock.screenshot.png',
     description: 'An Wall embeded analog clock in neumorphism',
-    url: 'https://analog-clock.atsuhiro.online',
+    url: 'https://analog-clock.atsuhiro.site',
   },
 ];

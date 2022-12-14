@@ -13,7 +13,7 @@ const ProjectCarouseltem: FC<ProjectCarouseltemProps> = ({ project }) => {
 
   return (
     <div className="flex flex-col gap-3 justify-center items-center p-16 bg-slate-100 dark:bg-gray-900">
-      <Image src={project.imageUrl} width={360} height={300} alt={''} />
+      <Image className="rounded-md" src={project.imageUrl} width={360} height={300} alt={''} />
       <h3 className="font-bold text-xl">{project.title}</h3>
       <p className="">{project.description}</p>
       <a href={project.url} target="_blank" rel="noreferrer">
