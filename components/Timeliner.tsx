@@ -1,8 +1,7 @@
-import React, { FC, useState } from 'react';
+import React, { FC, ReactElement, useState } from 'react';
 import { HiOutlineCheckCircle } from 'react-icons/hi2';
 import { MdOutlineUnfoldLess } from 'react-icons/md';
 import { TbDotsVertical } from 'react-icons/tb';
-import { Button } from 'flowbite-react';
 
 import ExperienceModal from '../components/ExperienceModal';
 
@@ -60,7 +59,7 @@ export type TimelineItem = {
   content: string;
   url?: string;
   stack?: TechStack;
-  description?: string[];
+  description?: string[] | ReactElement[];
 };
 
 type TimelineProps = {

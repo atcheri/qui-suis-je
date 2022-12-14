@@ -1,4 +1,5 @@
-import { TimelineItem } from '../../components/Timeliner';
+import { affinidiDescription } from './affinidi';
+import { TimelineItem } from '../../../components/Timeliner';
 
 export const studies: TimelineItem[] = [
   {
@@ -71,17 +72,7 @@ export const works: TimelineItem[] = [
         'gitlab',
       ],
     },
-    description: [
-      'An open-source command line interface: https://github.com/affinidi/affinidi-cli',
-      'Set up and grew a culture of automated tests multiple teams',
-      'Started and maintained a "Guild" focussed on Test-Driven-Development and Mob-Programming and trained peers for that',
-      'Created an internal coding Kata Dojo',
-      'Mentored interns and external students from https://www.wbscodingschool.com/',
-      'A rules-engine api using openapi: https://rules-manager.prod.affinity-project.org/api-docs/v2',
-      'A web user-interface using the micro frontend architecture: https://console.affinidi.com/',
-      'Built an end to end (E2E) tests suite with cypress',
-      'Integrated a loan eligibility API in the Indian market',
-    ],
+    description: affinidiDescription,
   },
   {
     name: 'Front-End Engineer',

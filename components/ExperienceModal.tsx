@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Modal } from 'flowbite-react';
+import { RiCheckFill } from 'react-icons/ri';
 
 import { TimelineItem } from './Timeliner';
 import TechStackIcon from './TechStackIcon';
@@ -36,7 +37,7 @@ const Experience: FC<ExperienceProps> = ({
           <div className="text-base leading-relaxed text-gray-500 dark:text-gray-300">
             {stack && (
               <>
-                <h3 className="text-md italic mb-2">Tech Stack</h3>
+                <h3 className="text-md italic mb-2 font-bold">Tech Stack</h3>
                 <ul className="flex flex-wrap gap-2 mb-3">
                   {stack.langs.map((l) => (
                     <li key={l}>
@@ -56,12 +57,17 @@ const Experience: FC<ExperienceProps> = ({
             )}
           </div>
           <div className="text-base leading-relaxed text-gray-500 dark:text-gray-300">
-            <h3 className="text-md italic mb-2">{type === 'work' ? 'Key achievements' : 'Content of study'}</h3>
-            {description?.map((l, i) => (
-              <div key={i} className="italic">
-                - {l}
-              </div>
-            ))}
+            <h3 className="text-md italic mb-2 font-bold">
+              {type === 'work' ? 'Key achievements' : 'Content of study'}
+            </h3>
+            <ul className="space-y-1 max-w-md list-inside">
+              {description?.map((l, i) => (
+                <li key={i} className="flex items-center italic">
+                  <RiCheckFill className="text-green-500 dark:text-green-400" />
+                  {l}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </Modal.Body>
@@ -75,3 +81,4 @@ const Experience: FC<ExperienceProps> = ({
 };
 
 export default Experience;
+7;
