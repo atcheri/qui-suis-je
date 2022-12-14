@@ -1,16 +1,27 @@
-import { Carousel } from 'flowbite-react';
+import { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { FC } from 'react';
 
 import ProjectCarouseltem from './ProjectCarouseltem';
 import { projects } from '../projects';
 
+import 'swiper/scss';
+import 'swiper/scss/pagination';
+
 const ProjectsCarousel: FC = () => {
   return (
-    <Carousel slideInterval={5000} className="h-full">
+    <Swiper
+      modules={[Pagination]}
+      pagination={{
+        clickable: true,
+        type: 'progressbar',
+      }}>
       {projects.map((p) => (
-        <ProjectCarouseltem key={p.id} project={p} />
+        <SwiperSlide key={p.id}>
+          <ProjectCarouseltem project={p} />
+        </SwiperSlide>
       ))}
-    </Carousel>
+    </Swiper>
   );
 };
 

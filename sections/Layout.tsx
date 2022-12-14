@@ -28,9 +28,9 @@ const Layout: FC<PropsWithChildren<{}>> = ({ children }) => {
         <link rel="manifest" href="/manifest.json" />
       </Head>
 
-      <div className="min-h-screen mx-auto max-w-6xl flex flex-col">
+      <div className="min-h-screen mx-auto max-w-6xl">
         <Header />
-        <main className="flex-grow mx-auto px-4 sm:px-6">{children}</main>
+        <main className="">{children}</main>
         <Footer />
       </div>
     </>
