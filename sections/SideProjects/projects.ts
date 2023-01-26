@@ -32,9 +32,23 @@ export const projects: Project[] = [
   },
   {
     id: i++,
-    title: 'Analog-clock',
-    imageUrl: '/projects/analog-clock.screenshot.png',
-    description: 'Analog clock in neumorphism',
-    url: 'https://analog-clock.atsuhiro.site',
+    title: 'Swordle',
+    imageUrl: '/projects/swordle.screenshot.png',
+    description: 'Another wordle game',
+    url: 'https://swordle.atsuhiro.site',
+  },
+  {
+    id: i++,
+    title: 'World-analog-clock',
+    imageUrl: '/projects/world-analog-clock.screenshot.png',
+    description: 'World Analog clock in neumorphism',
+    url: 'https://world-analog-clock.atsuhiro.site',
+  },
+  {
+    id: i++,
+    title: 'Pass-Vali',
+    imageUrl: '/projects/pass-vali.screenshot.png',
+    description: 'A simple password validator form',
+    url: 'https://pass-vali.atsuhiro.site',
   },
 ];
