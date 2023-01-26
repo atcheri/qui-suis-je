@@ -39,10 +39,10 @@ export const projects: Project[] = [
   },
   {
     id: i++,
-    title: 'World-analog-clock',
+    title: 'Jikan',
     imageUrl: '/projects/world-analog-clock.screenshot.png',
     description: 'World Analog clock in neumorphism',
-    url: 'https://world-analog-clock.atsuhiro.site',
+    url: 'https://jikan.atsuhiro.site',
   },
   {
     id: i++,
