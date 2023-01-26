@@ -16,6 +16,7 @@ export { JestIcon } from './JestIcon';
 export { JqueryIcon } from './JqueryIcon';
 export { KubernetesIcon } from './KubernetesIcon';
 export { LaravelIcon } from './LaravelIcon';
+export { LineIcon } from './LineIcon';
 export { MetamaskIcon } from './MetamaskIcon';
 export { MongoIcon } from './MongoIcon';
 export { MysqlIcon } from './MysqlIcon';

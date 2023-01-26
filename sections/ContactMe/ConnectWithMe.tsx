@@ -4,6 +4,7 @@ import { TbBrandTelegram } from 'react-icons/tb';
 import { CiLinkedin } from 'react-icons/ci';
 import Link from 'next/link';
 import { IconType } from 'react-icons/lib';
+import { SiLine } from 'react-icons/si';
 
 type ContactCardProps = {
   Icon: IconType;
@@ -39,17 +40,24 @@ const ConnectWithMe: FC = () => {
           link={{ href: 'mailto:atcheri@gmail.com', text: 'atcheri@gmail.com' }}
         />
         <ContactCard
-          Icon={TbBrandTelegram}
-          title="Telegram"
-          link={{ href: 'https://t.me/atchdayo', text: 'atchdayo' }}
-        />
-
-        <ContactCard
           Icon={CiLinkedin}
           title="Linkedin"
           link={{
             href: 'https://www.linkedin.com/in/endoatsuhiro/',
             text: 'endoatsuhiro',
+          }}
+        />
+        <ContactCard
+          Icon={TbBrandTelegram}
+          title="Telegram"
+          link={{ href: 'https://t.me/atchdayo', text: 'atchdayo' }}
+        />
+        <ContactCard
+          Icon={SiLine}
+          title="Line"
+          link={{
+            href: 'https://line.me/ti/p/Fs4L863JIC',
+            text: 'atchline',
           }}
         />
       </div>

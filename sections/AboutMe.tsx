@@ -12,6 +12,7 @@ import { withTransition } from '../styles/tailwind.classes';
 import Section from '../components/Section';
 import AnchoredHeader from '../components/AnchoredHeader';
 import Pana from '../components/Avatars/Pana';
+import { LineIcon } from '../components/Icons';
 
 const delayUnit = 500;
 
@@ -37,11 +38,14 @@ const AboutMe: FC = () => {
             <Link href="https://www.linkedin.com/in/endoatsuhiro/" target="_blank">
               <CiLinkedin className="h-7 w-7 text-blue-500" />
             </Link>
+            <Link href="https://github.com/atcheri" target="_blank">
+              <GoMarkGithub className="h-7 w-7" />
+            </Link>
             <Link href="https://t.me/atchdayo" target="_blank">
               <SiTelegram className="h-7 w-7 text-blue-400" />
             </Link>
-            <Link href="https://github.com/atcheri" target="_blank">
-              <GoMarkGithub className="h-7 w-7" />
+            <Link href="https://" target="_blank">
+              <LineIcon className="h-7 w-7" />
             </Link>
           </div>
         </div>
