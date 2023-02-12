@@ -11,7 +11,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   const { name, email, message } = req.body;
   try {
     await sendGridMailer.send({
-      from: 'atcheri@gmail.com',
+      from: email,
       to: 'atsuhiro@free.fr',
       subject: 'Mail depuis Qui-suis-je',
       html: `<h3>${name}</h3><div>contacted you from "Qui-suis-je" postfolio site</div><div>Email ${email}</div><div>Message<p>${message}</p></div>`,
