@@ -1,10 +1,11 @@
 import { FC } from 'react';
 import { Modal, Tooltip } from 'flowbite-react';
 import { RiCheckFill } from 'react-icons/ri';
+import Link from 'next/link';
+import { useTheme } from 'next-themes';
 
 import { TimelineItem } from './Timeliner';
 import TechStackIcon from './TechStackIcon';
-import Link from 'next/link';
 
 type ExperienceProps = {
   data: TimelineItem;
@@ -17,7 +18,11 @@ const Experience: FC<ExperienceProps> = ({
   show,
   toggleShow,
 }) => {
+  const { systemTheme , theme} = useTheme();
   const onClose = toggleShow;
+
+  const currentTheme = (theme === 'system' ? systemTheme : theme) === 'dark' ? 'light': 'dark';
+
 
   return (
     <Modal show={show} onClose={onClose}>
@@ -41,7 +46,7 @@ const Experience: FC<ExperienceProps> = ({
                 <ul className="flex flex-wrap gap-2 mb-3">
                   {stack.langs.map((l) => (
                     <li key={l}>
-                      <Tooltip style="light" content={l} trigger="hover">
+                      <Tooltip style={currentTheme} content={l} trigger="hover">
                         <TechStackIcon lang={l} />
                       </Tooltip>
                     </li>
@@ -50,7 +55,7 @@ const Experience: FC<ExperienceProps> = ({
                 <ul className="flex flex-wrap gap-2">
                   {stack.tools.map((t) => (
                     <li key={t}>
-                      <Tooltip style="light" content={<div className="py-3">{t}</div>} trigger="hover">
+                      <Tooltip style={currentTheme} content={<div className="py-2">{t}</div>} trigger="hover">
                         <TechStackIcon lang={t} />
                       </Tooltip>
                     </li>
