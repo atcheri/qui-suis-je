@@ -18,11 +18,10 @@ const Experience: FC<ExperienceProps> = ({
   show,
   toggleShow,
 }) => {
-  const { systemTheme , theme} = useTheme();
+  const { systemTheme, theme } = useTheme();
   const onClose = toggleShow;
 
-  const currentTheme = (theme === 'system' ? systemTheme : theme) === 'dark' ? 'light': 'dark';
-
+  const currentTheme = (theme === 'system' ? systemTheme : theme) === 'dark' ? 'light' : 'dark';
 
   return (
     <Modal show={show} onClose={onClose}>

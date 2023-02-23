@@ -1,4 +1,4 @@
-export { AlpineJsIcon } from './AlpinejsIcon';
+export { AlpineJsIcon } from './AlpineJsIcon';
 export { ApolloGraphqlIcon } from './ApolloGraphqlIcon';
 export { AwsIcon } from './AwsIcon';
 export { CppIcon } from './CppIcon';
