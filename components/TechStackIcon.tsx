@@ -19,8 +19,9 @@ const icons: Record<string, ComponentType<IconProps>> = {
   solidity: Icons.SolidityIcon,
   typescript: Icons.TypescriptIcon,
   //
-  aws: Icons.AwsIcon,
+  alpinejs: Icons.AlpineJsIcon,
   apollo: Icons.ApolloGraphqlIcon,
+  aws: Icons.AwsIcon,
   cypress: Icons.CypressIcon,
   docker: Icons.DockerIcon,
   elastic: Icons.ElasticSearchIcon,

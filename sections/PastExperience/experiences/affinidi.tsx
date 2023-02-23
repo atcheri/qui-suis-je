@@ -5,8 +5,14 @@ let adi = 0;
 
 export const affinidiDescription: ReactElement[] = [
   <Fragment key={`affinidi-description-${adi++}`}>
-    An open-source command line interface:{' '}
+    Open-source command line interface:{' '}
     <Link className="text-indigo-500" href="https://github.com/affinidi/affinidi-cli" target="_blank">
+      repo
+    </Link>
+  </Fragment>,
+  <Fragment key={`affinidi-description-${adi++}`}>
+    Open-source SDK (Software-Development-Kit):{' '}
+    <Link className="text-indigo-500" href="https://github.com/affinidi/affinidi-client-sdk/" target="_blank">
       repo
     </Link>
   </Fragment>,
@@ -19,7 +25,7 @@ export const affinidiDescription: ReactElement[] = [
   </Fragment>,
   <Fragment key={`affinidi-description-${adi++}`}>Created an internal coding Kata Dojo</Fragment>,
   <Fragment key={`affinidi-description-${adi++}`}>
-    Mentored interns and external students from{' '}
+    Mentored interns and external students from:{' '}
     <Link className="text-indigo-500" href="https://www.wbscodingschool.com" target="_blank">
       wbscodingschool
     </Link>

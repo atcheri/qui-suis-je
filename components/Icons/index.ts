@@ -1,5 +1,6 @@
-export { AwsIcon } from './AwsIcon';
+export { AlpineJsIcon } from './AlpinejsIcon';
 export { ApolloGraphqlIcon } from './ApolloGraphqlIcon';
+export { AwsIcon } from './AwsIcon';
 export { CppIcon } from './CppIcon';
 export { CypressIcon } from './CypressIcon';
 export { DockerIcon } from './DockerIcon';

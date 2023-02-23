@@ -14,6 +14,7 @@ type TimelinePeriod = {
 export type TechLang = 'go' | 'typescript' | 'c++' | 'solidity' | 'nodejs' | 'python' | 'php';
 
 export type TechTool =
+  | 'alpinejs'
   | 'apollo'
   | 'aws'
   | 'cypress'

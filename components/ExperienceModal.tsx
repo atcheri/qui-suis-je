@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Modal } from 'flowbite-react';
+import { Modal, Tooltip } from 'flowbite-react';
 import { RiCheckFill } from 'react-icons/ri';
 
 import { TimelineItem } from './Timeliner';
@@ -41,14 +41,18 @@ const Experience: FC<ExperienceProps> = ({
                 <ul className="flex flex-wrap gap-2 mb-3">
                   {stack.langs.map((l) => (
                     <li key={l}>
-                      <TechStackIcon lang={l} />
+                      <Tooltip style="light" content={l} trigger="hover">
+                        <TechStackIcon lang={l} />
+                      </Tooltip>
                     </li>
                   ))}
                 </ul>
                 <ul className="flex flex-wrap gap-2">
                   {stack.tools.map((t) => (
                     <li key={t}>
-                      <TechStackIcon lang={t} />
+                      <Tooltip style="light" content={<div className="py-3">{t}</div>} trigger="hover">
+                        <TechStackIcon lang={t} />
+                      </Tooltip>
                     </li>
                   ))}
                 </ul>
@@ -62,7 +66,7 @@ const Experience: FC<ExperienceProps> = ({
             </h3>
             <ul className="space-y-1 max-w-md list-inside">
               {description?.map((l, i) => (
-                <li key={i} className="flex items-center italic">
+                <li key={i} className="flex items-center italic gap-1">
                   <RiCheckFill className="text-green-500 dark:text-green-400" />
                   {l}
                 </li>
