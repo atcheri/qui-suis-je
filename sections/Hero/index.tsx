@@ -6,7 +6,7 @@ import { BsMouse } from 'react-icons/bs';
 
 import { withTransition } from '../../styles/tailwind.classes';
 import CodeSnippets from '../CodeSnippets';
-import { SECTION } from '../constants';
+import { RESUME_URL, SECTION } from '../constants';
 import Punchline from './Punchline';
 
 const delayUnit = 500;
@@ -30,9 +30,9 @@ const Hero: FC = () => {
             </Slide>
             <Slide className="grow items-center flex gap-6 my-10" direction="down" delay={2 * delayUnit}>
               <Fade delay={2 * delayUnit}>
-                <button className="btn outline" type="button" onClick={() => {}}>
+                <Link href={RESUME_URL} className="btn outline" target="_blank">
                   {t('download')} {t('resume')}
-                </button>
+                </Link>
                 <Link href={`#${SECTION.ABOUT_ME}`} className="btn">
                   {t('about-me')}
                 </Link>
