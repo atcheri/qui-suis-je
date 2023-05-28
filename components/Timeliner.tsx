@@ -1,9 +1,9 @@
 import React, { FC, ReactElement, useState } from 'react';
+
+import ExperienceModal from '../components/ExperienceModal';
 import { HiOutlineCheckCircle } from 'react-icons/hi2';
 import { MdOutlineUnfoldLess } from 'react-icons/md';
 import { TbDotsVertical } from 'react-icons/tb';
-
-import ExperienceModal from '../components/ExperienceModal';
 
 type TimelinePeriod = {
   year: string;
@@ -102,7 +102,7 @@ const Timeliner: FC<TimelineProps> = ({ items }) => {
               <div className="border-r-2 border-indigo-400 absolute h-full left-1 md:left-20 top-2">
                 <HiOutlineCheckCircle className="w-6 h-6 -top-1 -ml-[11px] absolute text-indigo-400 bg-white dark:bg-black" />
               </div>
-              <div className="ml-10" onClick={() => showItemInModal(i)}>
+              <div className="ml-10 cursor-pointer" onClick={() => showItemInModal(i)}>
                 <div className="capitalize font-bold">
                   {name} {sector && <span className="italic font-extralight">({sector})</span>}
                 </div>
