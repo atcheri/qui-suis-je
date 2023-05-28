@@ -11,11 +11,18 @@ let i = 1;
 export const projects: Project[] = [
   {
     id: i++,
-    title: 'Polyglotify',
-    imageUrl: '',
-    description: 'Localization as a Service',
-    url: 'https://polyglotify.online',
+    title: 'Japan Tour Guide Agency',
+    imageUrl: 'https://store.japantourguideagency.com/wp-content/uploads/2023/05/IMG_20200414_070109-300x225.jpg',
+    description: 'Travel booking site',
+    url: 'https://japantourguideagency.com',
   },
+  // {
+  //   id: i++,
+  //   title: 'Polyglotify',
+  //   imageUrl: '',
+  //   description: 'Localization as a Service',
+  //   url: 'https://polyglotify.online',
+  // },
   {
     id: i++,
     title: 'Polyglotify API',
