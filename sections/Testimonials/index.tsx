@@ -96,7 +96,7 @@ const Testimonials: FC = () => {
   const { t } = useTranslation('common');
 
   return (
-    <Section id={`${SECTION.TESTIMONIALS}`} className="text-center">
+    <Section id={`${SECTION.TESTIMONIALS}`} className="text-center py-20">
       <div className="flex flex-col items-center m-8">
         <AnchoredHeader
           anchor={SECTION.TESTIMONIALS}
