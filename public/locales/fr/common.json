@@ -35,6 +35,10 @@
     "title": "Projects persos",
     "sub-title": "Ce que j'ai récemment appris ou développé"
   },
+  "testimonials": {
+    "title": "Témoignages",
+    "sub-title": "Que pensez-vous de notre collaboration?"
+  },
   "what-i-do": {
     "first": "En journée, je résous des problèmes au travail.",
     "second": "Puis à la maison.",

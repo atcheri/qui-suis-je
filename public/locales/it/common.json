@@ -34,6 +34,10 @@
     "title": "Fouri dal lavoro",
     "sub-title": "Cosa ho imparato e lavorato recentemente"
   },
+  "testimonials": {
+    "title": "Testimonianze",
+    "sub-title": "Com'è stata la nostra collaborazione?"
+  },
   "resume": "CV",
   "what-i-do": {
     "first": "Durante il giorno risolvo i problemi di lavoro.",

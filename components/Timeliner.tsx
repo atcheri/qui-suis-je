@@ -4,6 +4,7 @@ import ExperienceModal from '../components/ExperienceModal';
 import { HiOutlineCheckCircle } from 'react-icons/hi2';
 import { MdOutlineUnfoldLess } from 'react-icons/md';
 import { TbDotsVertical } from 'react-icons/tb';
+import useShowMore from '../hooks/useShowMore';
 
 type TimelinePeriod = {
   year: string;
@@ -69,8 +70,8 @@ type TimelineProps = {
 
 const min = 4;
 
-const Timeliner: FC<TimelineProps> = ({ items }) => {
-  const [limit, setLimit] = useState(min);
+const Timeliner: FC<TimelineProps> = ({ items: rawItems }) => {
+  const { items, isMax, toggleMore } = useShowMore<TimelineItem>(rawItems, min);
   const [show, setShow] = useState(false);
   const [item, setItem] = useState<TimelineItem>(items[0]);
 
@@ -82,14 +83,12 @@ const Timeliner: FC<TimelineProps> = ({ items }) => {
     setShow(false);
   };
 
-  const isMax = limit === items.length;
-
   return (
     <>
       <ExperienceModal data={item} show={show} toggleShow={closeModal} />
       <div className="text-center">
         <div className={`mt-5 text-left ${!isMax && items.length > min && 'gradient-mask-b-50'}`}>
-          {items.slice(0, limit).map(({ name, period, content, location, place, sector }, i) => (
+          {items.map(({ name, period, content, location, place, sector }, i) => (
             <div key={`${name}-${i}`} className="flex items-center relative">
               <div className="hidden md:block w-20">
                 <div className="font-bold italic">{period.year}</div>
@@ -127,8 +126,8 @@ const Timeliner: FC<TimelineProps> = ({ items }) => {
           </div>
         </div>
 
-        {items.length > min && (
-          <div className="relative cursor-pointer" onClick={() => setLimit(isMax ? min : items.length)}>
+        {rawItems.length > min && (
+          <div className="relative cursor-pointer" onClick={toggleMore}>
             <span className="absolute inline-block rounded-full bg-indigo-500 text-white text-lg p-2">
               {isMax ? <MdOutlineUnfoldLess /> : <TbDotsVertical />}
             </span>

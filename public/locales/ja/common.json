@@ -35,6 +35,10 @@
     "title": "サイドプロジェクト",
     "sub-title": "仕事以外の開発。最近習った事"
   },
+  "testimonials": {
+    "title": "同僚の声",
+    "sub-title": "一緒に働いた感想は?"
+  },
   "what-i-do": {
     "first": "日中は職場で問題解決。",
     "second": "仕事後は勉強。",

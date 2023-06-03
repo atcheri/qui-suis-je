@@ -7,4 +7,5 @@ export const SECTION = Object.freeze({
   HOME: '/',
   PAST_EXPERIENCE: 'past-experience',
   SIDE_PROJECTS: 'side-projects',
+  TESTIMONIALS: 'testimonials',
 });

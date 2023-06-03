@@ -1,15 +1,16 @@
-import { GetStaticProps } from 'next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useRouter } from 'next/router';
 import { FC, useCallback, useEffect } from 'react';
 
-import { SECTION } from '../sections/constants';
-import ContactMe from '../sections/ContactMe';
-import Hero from '../sections/Hero';
 import AboutMe from '../sections/AboutMe';
+import ContactMe from '../sections/ContactMe';
+import { GetStaticProps } from 'next';
+import Hero from '../sections/Hero';
 import Layout from '../sections/Layout';
 import PastExperience from '../sections/PastExperience';
+import { SECTION } from '../sections/constants';
 import SideProjects from '../sections/SideProjects';
+import Testimonials from '../sections/Testimonials';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useRouter } from 'next/router';
 
 const Home: FC = () => {
   const { locale } = useRouter();
@@ -50,6 +51,7 @@ const Home: FC = () => {
       <Hero />
       <AboutMe />
       <PastExperience />
+      <Testimonials />
       <SideProjects />
       <ContactMe />
     </Layout>

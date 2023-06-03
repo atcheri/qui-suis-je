@@ -35,6 +35,10 @@
     "sub-title": "What I've recently learned and worked on"
   },
   "resume": "CV",
+  "testimonials": {
+    "title": "Testimonials",
+    "sub-title": "How was it to work with me?"
+  },
   "what-i-do": {
     "first": "Solving problems at work during the day.",
     "second": "Then, at home.",
