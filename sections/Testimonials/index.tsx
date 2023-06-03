@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
     role: 'Engineering Lead',
     content: [
       'A very skilled senior fullstack engineer with a solid understanding of the webstack.',
-      'His ability to architect and implement robust solutions is valuable.',
+      'His ability to architect and implement robust solutions is an undeniable strenght.',
       'He consistently delivers results and is a valuable asset to our team.',
     ],
     github: 'https://github.com/dendavidov-affinidi',
@@ -48,7 +48,7 @@ const testimonials: Testimonial[] = [
     title: 'He embraces Codecraftsmanship',
     role: 'Senior Full-Stack Engineer',
     content: [
-      'With an unwavering commitment to codecraftsmanship, Atsuhiro delivered elegant and well-structured code that not only meets the project requirements but also sets a high standard for quality and maintainability.',
+      'With an unwavering commitment to codecraftsmanship, Atsuhiro delivers elegant and well-structured code that not only meets the project requirements but also sets a high standard for quality and maintainability.',
     ],
     github: 'https://github.com/JonasEtzold',
     linkedin: 'https://www.linkedin.com/in/jonasetzold/',
@@ -68,9 +68,7 @@ const testimonials: Testimonial[] = [
     name: 'Jees K Denny',
     title: 'Dedicated Team Player',
     role: 'Lead Engineer',
-    content: [
-      'He was a really great support the team, fostering a collaborative environment and ensuring project success.',
-    ],
+    content: ['He was a really great team player, fostering a collaborative environment and ensuring project success.'],
     github: 'https://github.com/jeeskdenny',
     linkedin: 'https://www.linkedin.com/in/jeeskdenny',
   },
