@@ -13,6 +13,6 @@ export const SECTION = Object.freeze({
 export const CONTACT_LINKS = {
   LINKEDIN: 'https://www.linkedin.com/in/endoatsuhiro',
   GITHUB: 'https://github.com/atcheri',
-  LINE: 'https://www.linkedin.com/in/endoatsuhiro',
-  TELEGRAM: 'https://line.me/ti/p/Fs4L863JIC',
+  LINE: 'https://line.me/ti/p/Fs4L863JIC',
+  TELEGRAM: 'https://t.me/atchdayo',
 };
