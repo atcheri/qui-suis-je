@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         noto: ['Noto Serif JP', 'serif'],
+        rochester: ['Rochester', 'serif'],
         alice: ['alice'],
       },
     },

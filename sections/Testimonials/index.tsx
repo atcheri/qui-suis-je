@@ -65,7 +65,7 @@ const testimonials: Testimonial[] = [
     linkedin: 'https://www.linkedin.com/in/dhuan',
   },
   {
-    name: 'Jees K Denny',
+    name: 'Jees K. Denny',
     title: 'Dedicated Team Player',
     role: 'Lead Engineer',
     content: ['He was a really great team player, fostering a collaborative environment and ensuring project success.'],
@@ -118,7 +118,7 @@ const Testimonials: FC = () => {
             </div>
             <span className="inline-block h-1 w-10 rounded bg-indigo-500" />
             <div className="w-full flex flex-col items-end">
-              <h3 className="font-medium title-font tracking-wider">{name}</h3>
+              <h3 className="font-medium text-xl title-font font-rochester italic tracking-wider">{name}</h3>
               <p className="flex gap-2">
                 {linkedin && (
                   <Link href={linkedin} target="_blank">
