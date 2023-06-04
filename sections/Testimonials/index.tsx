@@ -28,8 +28,8 @@ const testimonials: Testimonial[] = [
     role: 'Engineering Lead',
     content: [
       'A very skilled senior fullstack engineer with a solid understanding of the webstack.',
-      'His ability to architect and implement robust solutions is an undeniable strenght.',
-      'He consistently delivers results and is a valuable asset to our team.',
+      'His ability to architect and implement robust solutions is an undeniable strength.',
+      'He consistently delivers results and demonstrated to be a valuable asset to our team.',
     ],
     github: 'https://github.com/dendavidov-affinidi',
     linkedin: 'https://www.linkedin.com/in/dendavidov/',
