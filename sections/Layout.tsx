@@ -1,12 +1,15 @@
-import Head from 'next/head';
 import { FC, PropsWithChildren } from 'react';
 
-import Header from './Header';
 import Footer from './Footer';
+import Head from 'next/head';
+import Header from './Header';
+import { useTranslation } from 'react-i18next';
 
 const Layout: FC<PropsWithChildren<{}>> = ({ children }) => {
-  const title = 'Qui-sui je? Atch';
-  const description = "Non, ce n'est pas un site de rencontre.";
+  const { t } = useTranslation('common');
+  const title = t('meta.title');
+  const description = t('meta.description');
+
   return (
     <>
       <Head>

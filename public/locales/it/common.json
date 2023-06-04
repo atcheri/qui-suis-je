@@ -29,16 +29,20 @@
   "grow": "crescere",
   "hi": "Ciao",
   "how-i-describe-myself": "",
+  "meta": {
+    "title": "Qui sono? Atsuhiro",
+    "description": "No. non è un sito di incontri."
+  },
   "projects": {
     "discover": "Discovere",
     "title": "Fouri dal lavoro",
     "sub-title": "Cosa ho imparato e lavorato recentemente"
   },
+  "resume": "CV",
   "testimonials": {
     "title": "Testimonianze",
     "sub-title": "Com'è stata la nostra collaborazione?"
   },
-  "resume": "CV",
   "what-i-do": {
     "first": "Durante il giorno risolvo i problemi di lavoro.",
     "second": "Poi a casa.",

@@ -29,6 +29,10 @@
   "grow": "grow",
   "hi": "Hi!",
   "how-i-describe-myself": "",
+  "meta": {
+    "title": "Who am I? Atsuhiro",
+    "description": "No. This is not a dating site."
+  },
   "projects": {
     "discover": "Discover",
     "title": "Outside of work",

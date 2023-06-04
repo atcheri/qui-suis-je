@@ -29,12 +29,16 @@
   "grow": "成長",
   "hi": "どうも",
   "how-i-describe-myself": "",
-  "resume": "履歴書",
+  "meta": {
+    "title": "初めまして、アツヒロです",
+    "description": "いいえ、出会い系サイトではありません。"
+  },
   "projects": {
     "discover": "アクセス",
     "title": "サイドプロジェクト",
     "sub-title": "仕事以外の開発。最近習った事"
   },
+  "resume": "履歴書",
   "testimonials": {
     "title": "同僚の声",
     "sub-title": "一緒に働いた感想は?"

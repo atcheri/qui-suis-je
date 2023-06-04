@@ -29,12 +29,16 @@
   "grow": "faire évoluer",
   "hi": "Bonjour",
   "how-i-describe-myself": "",
-  "resume": "CV",
+  "meta": {
+    "title": "Qui-suis je? Atsuhiro",
+    "description": "Non, ce n'est pas un site de rencontre."
+  },
   "projects": {
     "discover": "Découvrir",
     "title": "Projects persos",
     "sub-title": "Ce que j'ai récemment appris ou développé"
   },
+  "resume": "CV",
   "testimonials": {
     "title": "Témoignages",
     "sub-title": "Que pensez-vous de notre collaboration?"
