@@ -1,9 +1,10 @@
-import { affinidiDescription } from './affinidi';
 import { TimelineItem } from '../../../components/Timeliner';
+import { affinidiDescription } from './affinidi';
 
 export const studies: TimelineItem[] = [
   {
-    name: 'IT and Statistics in Finance',
+    name: 'statistics-finance',
+    title: 'IT and Statistics in Finance',
     type: 'study',
     place: 'Université Pierre et Marie Curie',
     sector: 'Master 2',
@@ -21,7 +22,8 @@ export const studies: TimelineItem[] = [
     ],
   },
   {
-    name: 'Mechanical Engineering - Aérodynamique et Aéroacoustique',
+    name: 'aerodynamics-aeroacoustic',
+    title: 'Mechanical Engineering - Aérodynamique et Aéroacoustique',
     type: 'study',
     place: 'Université Pierre et Marie Curie',
     sector: 'Master 2',
@@ -43,7 +45,8 @@ export const studies: TimelineItem[] = [
 
 export const works: TimelineItem[] = [
   {
-    name: 'Full-Stack Software Engineer',
+    name: 'affinidi',
+    title: 'Full-Stack Software Engineer',
     type: 'work',
     place: 'Affinidi GMBH',
     url: 'https://affinidi.com',
@@ -77,7 +80,8 @@ export const works: TimelineItem[] = [
     description: affinidiDescription,
   },
   {
-    name: 'Front-End Engineer',
+    name: 'realt',
+    title: 'Front-End Engineer',
     type: 'work',
     place: 'RealT',
     url: 'https://realt.co/',
@@ -99,7 +103,8 @@ export const works: TimelineItem[] = [
     ],
   },
   {
-    name: 'Front-End Engineer',
+    name: 'sestrel',
+    title: 'Front-End Engineeraffinidi',
     type: 'work',
     place: 'Sestrel',
     sector: 'Freelance',
@@ -120,7 +125,8 @@ export const works: TimelineItem[] = [
     ],
   },
   {
-    name: 'Full-Stack Software Engineer',
+    name: 'actineo',
+    title: 'Full-Stack Software Engineer',
     type: 'work',
     place: 'Actineo GMBH',
     url: 'https://www.actineo.de',
@@ -142,7 +148,8 @@ export const works: TimelineItem[] = [
     ],
   },
   {
-    name: 'Full-Stack Software Engineer',
+    name: 'investbook',
+    title: 'Full-Stack Software Engineer',
     type: 'work',
     place: 'Investbook.fr SAS',
     url: 'https://www.investbook.fr',
@@ -161,7 +168,8 @@ export const works: TimelineItem[] = [
     description: ['Built and deployed a whole crowdfunding platform for the company (Full-Stack)'],
   },
   {
-    name: 'Full-Stack Software Engineer',
+    name: 'tsa',
+    title: 'Full-Stack Software Engineer',
     type: 'work',
     place: 'TSA SAS',
     sector: 'Permanent',
@@ -179,7 +187,8 @@ export const works: TimelineItem[] = [
     description: ['Built and deployed a whole booking system for the company (Full-Stack)'],
   },
   {
-    name: 'Software Engineer',
+    name: 'cfm',
+    title: 'Software Engineeraffinidi',
     type: 'work',
     place: 'CFM SA',
     url: 'https://www.cfm.fr',
@@ -202,7 +211,8 @@ export const works: TimelineItem[] = [
     ],
   },
   {
-    name: 'Junior Software Engineer',
+    name: 'cfm-intern',
+    title: 'Junior Software Engineer',
     type: 'work',
     place: 'CFM SA',
     url: 'https://www.cfm.fr',

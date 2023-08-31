@@ -1,0 +1,35 @@
+{
+  "affinidi": {
+    "title": "Full-Stack Software Engineer",
+    "type": "work",
+    "place": "Affinidi GMBH",
+    "sector": "Permanent",
+    "location": "Berlin (Remote)",
+    "period": {
+      "year": "2021 ~",
+      "from": "July",
+      "to": "Present"
+    },
+    "content": "Building privacy preserving tools",
+    "url": "https://affinidi.com",
+    "stack": {
+      "langs": ["go", "typescript"],
+      "tools": [
+        "react",
+        "openapi",
+        "alpinejs",
+        "rest",
+        "jest",
+        "cypress",
+        "vuejs",
+        "docker",
+        "kubernetes",
+        "aws",
+        "mongo",
+        "mysql",
+        "postgres",
+        "gitlab"
+      ]
+    }
+  }
+}

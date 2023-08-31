@@ -1,0 +1,35 @@
+{
+  "affinidi": {
+    "title": "フルスタック ソフトウェア エンジニア",
+    "type": "work",
+    "place": "Affinidi GMBH",
+    "location": "ベルリン (リモート)",
+    "sector": "正社員",
+    "period": {
+      "year": "2021年 ~",
+      "from": "7月",
+      "to": "現在"
+    },
+    "content": "プライバシー保護ツールの構築",
+    "url": "https://affinidi.com",
+    "stack": {
+      "langs": ["go", "typescript"],
+      "tools": [
+        "react",
+        "openapi",
+        "alpinejs",
+        "rest",
+        "jest",
+        "cypress",
+        "vuejs",
+        "docker",
+        "kubernetes",
+        "aws",
+        "mongo",
+        "mysql",
+        "postgres",
+        "gitlab"
+      ]
+    }
+  }
+}
