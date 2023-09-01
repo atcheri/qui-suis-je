@@ -16,24 +16,24 @@ type ExperienceProps = {
 
 const Experience: FC<ExperienceProps> = ({ name, show, toggleShow }) => {
   const { systemTheme, theme } = useTheme();
-  const { t } = useTranslation('works');
+  const { t } = useTranslation(['common', 'works']);
   const onClose = toggleShow;
 
   const currentTheme = (theme === 'system' ? systemTheme : theme) === 'dark' ? 'light' : 'dark';
 
-  const desc = t(`${name}.description`, { returnObjects: true });
+  const desc = t(`${name}.description`, { returnObjects: true, ns: 'works' });
   if (typeof desc === 'string') {
     return null;
   }
-  console.log('desc:', desc);
-  const stack = t(`${name}.stack`, { returnObjects: true }) as TechStack;
+
+  const stack = t(`${name}.stack`, { returnObjects: true, ns: 'works' }) as TechStack;
 
   return (
     <Modal show={show} onClose={onClose}>
       <Modal.Header>
-        <div>{t(`${name}.title`)}</div>
+        <div>{t(`${name}.title`, { ns: 'works' })}</div>
         <div className="italic text-sm text-slate-500 dark:text-white">
-          {t(`${name}.place`)} - {t(`${name}.location`)}{' '}
+          {t(`${name}.place`, { ns: 'works' })} - {t(`${name}.location`, { ns: 'works' })}{' '}
           {t(`${name}.url`) && (
             <Link href={t(`${name}.url`)} target="_blank" className="ml-3 text-indigo-500">
               {t(`${name}.url`)}
@@ -43,6 +43,10 @@ const Experience: FC<ExperienceProps> = ({ name, show, toggleShow }) => {
       </Modal.Header>
       <Modal.Body>
         <div className="space-y-6">
+          <div className="text-base leading-relaxed text-gray-500 dark:text-gray-300">
+            <h3 className="text-md italic mb-2 font-bold">{t('business')}</h3>
+            <span>{t(`${name}.what`, { ns: 'works' })}</span>
+          </div>
           <div className="text-base leading-relaxed text-gray-500 dark:text-gray-300">
             {stack && (
               <>
@@ -71,7 +75,7 @@ const Experience: FC<ExperienceProps> = ({ name, show, toggleShow }) => {
           </div>
           <div className="text-base leading-relaxed text-gray-500 dark:text-gray-300">
             <h3 className="text-md italic mb-2 font-bold">
-              {t(`${name}.type`) === 'work' ? 'Key achievements' : 'Content of study'}
+              {t(`${name}.type`, { ns: 'works' }) === 'work' ? 'Key achievements' : 'Content of study'}
             </h3>
             <ul className="space-y-1 max-w-md list-inside">
               {(desc as WorkExperienceDesc[])?.map((l, i) => {

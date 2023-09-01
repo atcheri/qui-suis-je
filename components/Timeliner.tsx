@@ -73,19 +73,20 @@ export type TimelineItem = {
 };
 
 type TimelineProps = {
-  items: string[];
+  names: string[];
 };
 
 const min = 4;
 
-const Timeliner: FC<TimelineProps> = ({ items: rawItems }) => {
+const Timeliner: FC<TimelineProps> = ({ names }) => {
   const { t } = useTranslation('works');
-  const { items, isMax, toggleMore } = useShowMore<string>(rawItems, min);
+  const { items, isMax, toggleMore } = useShowMore<string>(names, min);
   const [show, setShow] = useState(false);
   const [name, setName] = useState<string>(items[0]);
 
   const showItemInModal = (index: number) => {
-    setName(items[index]);
+    setName(names[index]);
+    console.log('items[index]:', names[index]);
     setShow(true);
   };
   const closeModal = () => {
@@ -96,8 +97,8 @@ const Timeliner: FC<TimelineProps> = ({ items: rawItems }) => {
     <>
       <ExperienceModal name={name} show={show} toggleShow={closeModal} />
       <div className="text-center">
-        <div className={`mt-5 text-left ${!isMax && items.length > min && 'gradient-mask-b-50'}`}>
-          {rawItems.map((name, i) => {
+        <div className={`mt-5 text-left ${!isMax && names.length > min && 'gradient-mask-b-50'}`}>
+          {items.map((name, i) => {
             return (
               <div key={`${name}-${i}`} className="flex items-center relative">
                 <div className="hidden md:block w-20">
@@ -138,7 +139,7 @@ const Timeliner: FC<TimelineProps> = ({ items: rawItems }) => {
           </div>
         </div>
 
-        {rawItems.length > min && (
+        {names.length > min && (
           <div className="relative cursor-pointer" onClick={toggleMore}>
             <span className="absolute inline-block rounded-full bg-indigo-500 text-white text-lg p-2">
               {isMax ? <MdOutlineUnfoldLess /> : <TbDotsVertical />}

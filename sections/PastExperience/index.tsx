@@ -39,7 +39,7 @@ const PastExperience: FC = () => {
         <div className="flex justify-center">
           <div className="md:w-3/5">
             {/* <Timeliner items={expType === 'study' ? studies : works} /> */}
-            <Timeliner items={works} />
+            <Timeliner names={works} />
           </div>
         </div>
       </div>
