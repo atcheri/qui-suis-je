@@ -1,5 +1,5 @@
 import { Modal, Tooltip } from 'flowbite-react';
-import { TechStack, TimelineItem } from './Timeliner';
+import { TechStack, WorkExperienceDesc } from './Timeliner';
 
 import { FC } from 'react';
 import Link from 'next/link';
@@ -25,6 +25,7 @@ const Experience: FC<ExperienceProps> = ({ name, show, toggleShow }) => {
   if (typeof desc === 'string') {
     return null;
   }
+  console.log('desc:', desc);
   const stack = t(`${name}.stack`, { returnObjects: true }) as TechStack;
 
   return (
@@ -73,12 +74,19 @@ const Experience: FC<ExperienceProps> = ({ name, show, toggleShow }) => {
               {t(`${name}.type`) === 'work' ? 'Key achievements' : 'Content of study'}
             </h3>
             <ul className="space-y-1 max-w-md list-inside">
-              {(desc as string[])?.map((l, i) => (
-                <li key={i} className="flex items-center italic gap-1">
-                  <RiCheckFill className="text-green-500 dark:text-green-400" />
-                  {l}
-                </li>
-              ))}
+              {(desc as WorkExperienceDesc[])?.map((l, i) => {
+                return (
+                  <li key={i} className="flex items-center italic gap-1">
+                    <RiCheckFill className="text-green-500 dark:text-green-400" />
+                    <div>{l.content}</div>
+                    {l.url && (
+                      <Link className="text-indigo-500" href={l.url} target="_blank">
+                        Link
+                      </Link>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

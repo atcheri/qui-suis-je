@@ -46,6 +46,11 @@ export type TechStack = {
   tools: TechTool[];
 };
 
+export type WorkExperienceDesc = {
+  content: string | ReactElement;
+  url?: string;
+};
+
 export type TimelineItem = {
   /** Job title */
   title: string;
@@ -64,23 +69,23 @@ export type TimelineItem = {
   content: string;
   url?: string;
   stack?: TechStack;
-  description?: string[] | ReactElement[];
+  description?: WorkExperienceDesc[] | ReactElement[];
 };
 
 type TimelineProps = {
-  items: TimelineItem[];
+  items: string[];
 };
 
 const min = 4;
 
 const Timeliner: FC<TimelineProps> = ({ items: rawItems }) => {
   const { t } = useTranslation('works');
-  const { items, isMax, toggleMore } = useShowMore<TimelineItem>(rawItems, min);
+  const { items, isMax, toggleMore } = useShowMore<string>(rawItems, min);
   const [show, setShow] = useState(false);
-  const [name, setName] = useState<string>(items[0].name);
+  const [name, setName] = useState<string>(items[0]);
 
   const showItemInModal = (index: number) => {
-    setName(items[index].name);
+    setName(items[index]);
     setShow(true);
   };
   const closeModal = () => {
@@ -92,7 +97,7 @@ const Timeliner: FC<TimelineProps> = ({ items: rawItems }) => {
       <ExperienceModal name={name} show={show} toggleShow={closeModal} />
       <div className="text-center">
         <div className={`mt-5 text-left ${!isMax && items.length > min && 'gradient-mask-b-50'}`}>
-          {rawItems.map(({ name }, i) => {
+          {rawItems.map((name, i) => {
             return (
               <div key={`${name}-${i}`} className="flex items-center relative">
                 <div className="hidden md:block w-20">

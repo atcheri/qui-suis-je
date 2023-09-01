@@ -31,7 +31,39 @@
         "gitlab"
       ]
     },
-    "description": ["lorem"]
+    "description": [
+      {
+        "content": "Open-source command line interface:",
+        "url": "https://github.com/affinidi/affinidi-cli"
+      },
+      {
+        "content": "Open-source SDK (Software-Development-Kit):",
+        "url": "https://github.com/affinidi/affinidi-client-sdk/"
+      },
+      {
+        "content": "Set up and grew a culture of automated tests multiple teams"
+      },
+      {
+        "content": "Started and maintained a &quot;Guild&quot; focussed on Test-Driven-Development and Mob-Programming. Trained peers on that topic"
+      },
+      {
+        "content": "Mentored interns and external students from:",
+        "url": "https://www.wbscodingschool.com"
+      },
+      {
+        "content": "A rules-engine api using openapi:"
+      },
+      {
+        "content": "A web user-interface using the micro frontend architecture:",
+        "url": "https://console.affinidi.com"
+      },
+      {
+        "content": "Built an end to end (E2E) tests suite with cypress"
+      },
+      {
+        "content": "Integrated a loan eligibility API in the Indian market"
+      }
+    ]
   },
   "realt": {
     "title": "Front-End Engineer",
@@ -51,8 +83,8 @@
       "tools": ["metamask", "react", "jest", "nextjs", "heroku", "gitlab"]
     },
     "description": [
-      "Improved the the daily/weekly rent TOKEN payment calculation",
-      "Collecting data from side chains such as Polygon (Matic)"
+      { "content": "Improved the the daily/weekly rent TOKEN payment calculation" },
+      { "content": "Collecting data from side chains such as Polygon (Matic)" }
     ]
   },
   "sestrel": {
@@ -94,8 +126,8 @@
       "tools": ["apollo", "graphql", "react", "jest", "docker", "mongo", "rest"]
     },
     "description": [
-      "Designed and built a whole claim management system for insurance companies",
-      "Supervised outsourced development"
+      { "content": "Designed and built a whole claim management system for insurance companies" },
+      { "content": "Supervised outsourced development" }
     ]
   },
   "investbook": {
@@ -115,7 +147,7 @@
       "langs": ["php", "typescript", "nodejs"],
       "tools": ["symfony", "mysql", "rest", "jquery"]
     },
-    "description": ["Built and deployed a whole crowdfunding platform for the company (Full-Stack)"]
+    "description": [{ "content": "Built and deployed a whole crowdfunding platform for the company (Full-Stack)" }]
   },
   "tsa": {
     "title": "Full-Stack Software Engineer",
@@ -133,7 +165,7 @@
       "langs": ["php", "typescript", "nodejs"],
       "tools": ["symfony", "mysql", "rest", "jquery"]
     },
-    "description": ["Built and deployed a whole booking system for the company (Full-Stack)"]
+    "description": [{ "content": "Built and deployed a whole booking system for the company (Full-Stack)" }]
   },
   "cfm": {
     "title": "Software Engineeraffinidi",
@@ -153,9 +185,9 @@
       "tools": ["mysql", "rest"]
     },
     "description": [
-      "Contributed to develop in-house high frenquency trading application in c++",
-      "Trading application Production Support on Asian and Australian capital market open hours",
-      "Continued the work started during the internship"
+      { "content": "Contributed to develop in-house high frenquency trading application in c++" },
+      { "content": "Trading application Production Support on Asian and Australian capital market open hours" },
+      { "content": "Continued the work started during the internship" }
     ]
   },
   "cfm-intern": {
@@ -176,8 +208,8 @@
       "tools": ["mysql", "rest"]
     },
     "description": [
-      "Graphical user interface that displays daily asset prices using highcharts",
-      "Tools to calculate latency statistics of order messages"
+      { "content": "Graphical user interface that displays daily asset prices using highcharts" },
+      { "content": "Tools to calculate latency statistics of order messages" }
     ]
   }
 }
