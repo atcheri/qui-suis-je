@@ -1,9 +1,10 @@
-import React, { ComponentType, FC } from 'react';
-import { HiOutlineQuestionMarkCircle } from 'react-icons/hi2';
-
 import * as Icons from './Icons';
+
+import React, { ComponentType, FC } from 'react';
+import { TechLang, TechTool } from './ExperienceModal';
+
+import { HiOutlineQuestionMarkCircle } from 'react-icons/hi2';
 import { IconProps } from './Icons/types';
-import { TechLang, TechTool } from './Timeliner';
 
 type TechStackIconProps = {
   lang: TechLang | TechTool;
