@@ -1,37 +1,44 @@
-import { FC } from 'react';
 import { Modal, Tooltip } from 'flowbite-react';
-import { RiCheckFill } from 'react-icons/ri';
-import Link from 'next/link';
-import { useTheme } from 'next-themes';
 
-import { TimelineItem } from './Timeliner';
+import { FC } from 'react';
+import Link from 'next/link';
+import { RiCheckFill } from 'react-icons/ri';
 import TechStackIcon from './TechStackIcon';
+import { TimelineItem } from './Timeliner';
+import { useTheme } from 'next-themes';
+import { useTranslation } from 'react-i18next';
 
 type ExperienceProps = {
+  name: string;
   data: TimelineItem;
   show: boolean;
   toggleShow: () => void;
 };
 
 const Experience: FC<ExperienceProps> = ({
-  data: { description, location, name, place, stack, type, url },
+  name,
+  data: { description, location, place, stack, title, type, url },
   show,
   toggleShow,
 }) => {
   const { systemTheme, theme } = useTheme();
+  const { t } = useTranslation('works');
   const onClose = toggleShow;
 
   const currentTheme = (theme === 'system' ? systemTheme : theme) === 'dark' ? 'light' : 'dark';
 
+  const desc = t(`${name}.description`, { returnObjects: true }) as string[];
+  console.log('desc:', desc);
+
   return (
     <Modal show={show} onClose={onClose}>
       <Modal.Header>
-        <div>{name}</div>
+        <div>{t(`${name}.title`)}</div>
         <div className="italic text-sm text-slate-500 dark:text-white">
-          {place} - {location}{' '}
-          {url && (
-            <Link href={url} target="_blank" className="ml-3 text-indigo-500">
-              {url}
+          {t(`${name}.place`)} - {t(`${name}.location`)}{' '}
+          {t(`${name}.url`) && (
+            <Link href={t(`${name}.url`)} target="_blank" className="ml-3 text-indigo-500">
+              {t(`${name}.url`)}
             </Link>
           )}
         </div>
@@ -69,7 +76,7 @@ const Experience: FC<ExperienceProps> = ({
               {type === 'work' ? 'Key achievements' : 'Content of study'}
             </h3>
             <ul className="space-y-1 max-w-md list-inside">
-              {description?.map((l, i) => (
+              {desc?.map((l, i) => (
                 <li key={i} className="flex items-center italic gap-1">
                   <RiCheckFill className="text-green-500 dark:text-green-400" />
                   {l}
@@ -89,4 +96,3 @@ const Experience: FC<ExperienceProps> = ({
 };
 
 export default Experience;
-7;

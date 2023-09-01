@@ -89,7 +89,7 @@ const Timeliner: FC<TimelineProps> = ({ items: rawItems }) => {
 
   return (
     <>
-      <ExperienceModal data={item} show={show} toggleShow={closeModal} />
+      <ExperienceModal name={item.name} data={item} show={show} toggleShow={closeModal} />
       <div className="text-center">
         <div className={`mt-5 text-left ${!isMax && items.length > min && 'gradient-mask-b-50'}`}>
           {rawItems.map(({ name }, i) => {

@@ -3,7 +3,7 @@
     "title": "フルスタック ソフトウェア エンジニア",
     "type": "work",
     "place": "Affinidi GMBH",
-    "location": "ベルリン (リモート)",
+    "location": "ベルリン, ドイツ (リモート)",
     "sector": "正社員",
     "period": {
       "year": "2021年 ~",
@@ -30,153 +30,148 @@
         "postgres",
         "gitlab"
       ]
-    }
+    },
+    "description": ["lorem"]
   },
   "realt": {
-    "title": "Front-End Engineer",
+    "title": "フロントエンドエンジニア",
     "type": "work",
     "place": "RealT",
     "url": "https://realt.co/",
-    "sector": "Freelance",
-    "location": "Remote",
+    "sector": "フリーランス",
+    "location": "米国, リモート",
     "period": {
-      "year": "2021",
-      "from": "March",
-      "to": "June"
+      "year": "2021年",
+      "from": "3月",
+      "to": "6月"
     },
-    "content": "Worked on the RealT TOKEN rent calculation system",
+    "content": "RealT TOKENの家賃計算システムの開発に従事",
     "stack": {
       "langs": ["typescript"],
       "tools": ["metamask", "react", "jest", "nextjs", "heroku", "gitlab"]
     },
-    "description": [
-      "Improved the the daily/weekly rent TOKEN payment calculation",
-      "Collecting data from side chains such as Polygon (Matic)"
-    ]
+    "description": ["日次/週次の家賃TOKEN支払い計算の改善", "Polygon（Matic）などのサイドチェーンからのデータ収集"]
   },
   "sestrel": {
-    "title": "Front-End Engineeraffinidi",
+    "title": "フロントエンドエンジニア",
     "type": "work",
     "place": "Sestrel",
-    "sector": "Freelance",
-    "location": "Remote",
+    "sector": "フリーランス",
+    "location": "香港, リモート",
     "period": {
-      "year": "2020 ~ 2021",
-      "from": "October",
-      "to": "April"
+      "year": "2020年〜2021年",
+      "from": "10月",
+      "to": "4月"
     },
-    "content": "Contributed to the mobile version of the marketplace",
+    "content": "マーケットプレイスのモバイルバージョンに貢献",
     "stack": {
       "langs": ["nodejs", "typescript", "solidity"],
       "tools": ["metamask", "docker", "react", "react-native", "jest", "netlify"]
     },
     "description": [
-      "Created github actions to build and deploy the reat-native based mobile application (Expo)",
-      "Migrated the nodejs backend code from javascript to typescript"
+      "reat-nativeベースのモバイルアプリケーション（Expo）のビルドとデプロイのためのGitHub Actionsの作成",
+      "JavaScriptからTypeScriptへのNode.jsバックエンドコードの移行"
     ]
   },
   "actineo": {
-    "title": "Full-Stack Software Engineer",
+    "title": "フルスタック ソフトウェア エンジニア",
     "type": "work",
     "place": "Actineo GMBH",
     "url": "https://www.actineo.de",
-    "sector": "Permanent",
-    "location": "Cologne",
+    "sector": "正社員",
+    "location": "ケルン, ドイツ",
     "period": {
-      "year": "2017 ~ 2020",
-      "from": "October",
-      "to": "September"
+      "year": "2017年〜2020年",
+      "from": "10月",
+      "to": "9月"
     },
-    "content": "Designed a claim management system",
+    "content": "保険会社向けの請求管理システムの設計",
     "stack": {
       "langs": ["nodejs", "typescript"],
       "tools": ["apollo", "graphql", "react", "jest", "docker", "mongo", "rest"]
     },
-    "description": [
-      "Designed and built a whole claim management system for insurance companies",
-      "Supervised outsourced development"
-    ]
+    "description": ["保険会社向けの請求管理システムの設計と構築", "外部委託された開発の監督"]
   },
   "investbook": {
-    "title": "Full-Stack Software Engineer",
+    "title": "フルスタック ソフトウェア エンジニア",
     "type": "work",
     "place": "Investbook.fr SAS",
     "url": "https://www.investbook.fr",
-    "sector": "Permanent",
-    "location": "Paris",
+    "sector": "正社員",
+    "location": "パリ, フランス",
     "period": {
-      "year": "2015 ~ 2017",
-      "from": "July",
-      "to": "September"
+      "year": "2015年〜2017年",
+      "from": "7月",
+      "to": "9月"
     },
-    "content": "Built a crowdfunding platform for the company",
+    "content": "企業向けのクラウドファンディングプラットフォームの構築",
     "stack": {
       "langs": ["php", "typescript", "nodejs"],
       "tools": ["symfony", "mysql", "rest", "jquery"]
     },
-    "description": ["Built and deployed a whole crowdfunding platform for the company (Full-Stack)"]
+    "description": ["企業向けのクラウドファンディングプラットフォームの構築とデプロイ（フルスタック）"]
   },
   "tsa": {
-    "title": "Full-Stack Software Engineer",
+    "title": "フルスタック ソフトウェア エンジニア",
     "type": "work",
     "place": "TSA SAS",
-    "sector": "Permanent",
-    "location": "Paris",
+    "sector": "正社員",
+    "location": "パリ, フランス",
     "period": {
-      "year": "2012 ~ 2015",
-      "from": "March",
-      "to": "August"
+      "year": "2012年〜2015年",
+      "from": "3月",
+      "to": "8月"
     },
-    "content": "Built a booking system for the company",
+    "content": "企業向けの予約システムの構築",
     "stack": {
       "langs": ["php", "typescript", "nodejs"],
       "tools": ["symfony", "mysql", "rest", "jquery"]
     },
-    "description": ["Built and deployed a whole booking system for the company (Full-Stack)"]
+    "description": ["企業向けの予約システムの構築とデプロイ（フルスタック）"]
   },
   "cfm": {
-    "title": "Software Engineeraffinidi",
+    "title": "ソフトウェアエンジニア",
     "type": "work",
     "place": "CFM SA",
     "url": "https://www.cfm.fr",
-    "sector": "Permanent",
-    "location": "Tokyo",
+    "sector": "正社員",
+    "location": "東京",
     "period": {
-      "year": "2010 ~ 2012",
-      "from": "June",
-      "to": "February"
+      "year": "2010年〜2012年",
+      "from": "6月",
+      "to": "2月"
     },
-    "content": "Worked on a HFT in-house application built with in c++",
+    "content": "C++で構築されたHFT社内アプリケーションの開発",
     "stack": {
       "langs": ["c++", "python", "nodejs"],
       "tools": ["mysql", "rest"]
     },
     "description": [
-      "Contributed to develop in-house high frenquency trading application in c++",
-      "Trading application Production Support on Asian and Australian capital market open hours",
-      "Continued the work started during the internship"
+      "社内高頻度取引アプリケーションのC++での開発への貢献",
+      "アジアおよびオーストラリアの株式市場の営業時間中の取引アプリケーションの本番サポート",
+      "インターンシップ中に始めた作業の継続"
     ]
   },
   "cfm-intern": {
-    "title": "Junior Software Engineer",
+    "title": "ジュニアソフトウェアエンジニア",
     "type": "work",
     "place": "CFM SA",
     "url": "https://www.cfm.fr",
-    "sector": "Permanent",
-    "location": "Paris",
+    "sector": "インターンシップ",
+    "location": "パリ, フランス",
     "period": {
-      "year": "2009 ~ 2010",
-      "from": "January",
-      "to": "May"
+      "year": "2009年〜2010年",
+      "from": "1月",
+      "to": "5月"
     },
-    "content": "6 month post graduate Internship",
+    "content": "卒後6ヶ月のインターンシップ",
     "stack": {
       "langs": ["c++", "python", "nodejs"],
       "tools": ["mysql", "rest"]
     },
     "description": [
-      "Graphical user interface that displays daily asset prices using highcharts",
-      "Tools to calculate latency statistics of order messages"
+      "Highchartsを使用して日次資産価格を表示するグラフィカルユーザーインターフェース",
+      "注文メッセージのレイテンシ統計を計算するためのツール"
     ]
   }
 }
