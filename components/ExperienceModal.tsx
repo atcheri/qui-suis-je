@@ -1,34 +1,31 @@
 import { Modal, Tooltip } from 'flowbite-react';
+import { TechStack, TimelineItem } from './Timeliner';
 
 import { FC } from 'react';
 import Link from 'next/link';
 import { RiCheckFill } from 'react-icons/ri';
 import TechStackIcon from './TechStackIcon';
-import { TimelineItem } from './Timeliner';
 import { useTheme } from 'next-themes';
 import { useTranslation } from 'react-i18next';
 
 type ExperienceProps = {
   name: string;
-  data: TimelineItem;
   show: boolean;
   toggleShow: () => void;
 };
 
-const Experience: FC<ExperienceProps> = ({
-  name,
-  data: { description, location, place, stack, title, type, url },
-  show,
-  toggleShow,
-}) => {
+const Experience: FC<ExperienceProps> = ({ name, show, toggleShow }) => {
   const { systemTheme, theme } = useTheme();
   const { t } = useTranslation('works');
   const onClose = toggleShow;
 
   const currentTheme = (theme === 'system' ? systemTheme : theme) === 'dark' ? 'light' : 'dark';
 
-  const desc = t(`${name}.description`, { returnObjects: true }) as string[];
-  console.log('desc:', desc);
+  const desc = t(`${name}.description`, { returnObjects: true });
+  if (typeof desc === 'string') {
+    return null;
+  }
+  const stack = t(`${name}.stack`, { returnObjects: true }) as TechStack;
 
   return (
     <Modal show={show} onClose={onClose}>
@@ -73,10 +70,10 @@ const Experience: FC<ExperienceProps> = ({
           </div>
           <div className="text-base leading-relaxed text-gray-500 dark:text-gray-300">
             <h3 className="text-md italic mb-2 font-bold">
-              {type === 'work' ? 'Key achievements' : 'Content of study'}
+              {t(`${name}.type`) === 'work' ? 'Key achievements' : 'Content of study'}
             </h3>
             <ul className="space-y-1 max-w-md list-inside">
-              {desc?.map((l, i) => (
+              {(desc as string[])?.map((l, i) => (
                 <li key={i} className="flex items-center italic gap-1">
                   <RiCheckFill className="text-green-500 dark:text-green-400" />
                   {l}

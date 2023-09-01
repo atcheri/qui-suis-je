@@ -41,7 +41,7 @@ export type TechTool =
   | 'tailwind'
   | 'vuejs';
 
-type TechStack = {
+export type TechStack = {
   langs: TechLang[];
   tools: TechTool[];
 };
@@ -77,10 +77,10 @@ const Timeliner: FC<TimelineProps> = ({ items: rawItems }) => {
   const { t } = useTranslation('works');
   const { items, isMax, toggleMore } = useShowMore<TimelineItem>(rawItems, min);
   const [show, setShow] = useState(false);
-  const [item, setItem] = useState<TimelineItem>(items[0]);
+  const [name, setName] = useState<string>(items[0].name);
 
   const showItemInModal = (index: number) => {
-    setItem(items[index]);
+    setName(items[index].name);
     setShow(true);
   };
   const closeModal = () => {
@@ -89,7 +89,7 @@ const Timeliner: FC<TimelineProps> = ({ items: rawItems }) => {
 
   return (
     <>
-      <ExperienceModal name={item.name} data={item} show={show} toggleShow={closeModal} />
+      <ExperienceModal name={name} show={show} toggleShow={closeModal} />
       <div className="text-center">
         <div className={`mt-5 text-left ${!isMax && items.length > min && 'gradient-mask-b-50'}`}>
           {rawItems.map(({ name }, i) => {
