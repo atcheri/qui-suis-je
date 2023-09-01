@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import React, { FC } from 'react';
-import { HiOutlineHashtag } from 'react-icons/hi2';
 
+import { FaSlackHash } from 'react-icons/fa';
 import HighLight from './HighLight';
+import Link from 'next/link';
 
 type AnchoredHeaderProps = {
   anchor: string;
@@ -15,7 +15,7 @@ const AnchoredHeader: FC<AnchoredHeaderProps> = ({ anchor, title, subTitle }) =>
     <>
       <Link href={`/#${anchor}`}>
         <h2 id={anchor} className="flex items-center gap-1 text-2xl font-bold mb-2">
-          <HiOutlineHashtag />
+          <FaSlackHash />
           <HighLight className="text-gray-700 dark:text-white">{title}</HighLight>
         </h2>
       </Link>

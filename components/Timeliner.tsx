@@ -1,82 +1,28 @@
 import React, { FC, ReactElement, useState } from 'react';
 
 import ExperienceModal from '../components/ExperienceModal';
-import { HiOutlineCheckCircle } from 'react-icons/hi2';
+import { ExperienceTypes } from '../sections/PastExperience/experiences';
+import { FiCheckCircle } from 'react-icons/fi';
 import { MdOutlineUnfoldLess } from 'react-icons/md';
 import { TbDotsVertical } from 'react-icons/tb';
 import useShowMore from '../hooks/useShowMore';
-
-type TimelinePeriod = {
-  year: string;
-  from: string;
-  to: string;
-};
-
-export type TechLang = 'go' | 'typescript' | 'c++' | 'solidity' | 'nodejs' | 'python' | 'php';
-
-export type TechTool =
-  | 'alpinejs'
-  | 'apollo'
-  | 'aws'
-  | 'cypress'
-  | 'docker'
-  | 'gitlab'
-  | 'graphql'
-  | 'heroku'
-  | 'kubernetes'
-  | 'jest'
-  | 'jquery'
-  | 'metamask'
-  | 'mongo'
-  | 'mysql'
-  | 'netlify'
-  | 'nextjs'
-  | 'openapi'
-  | 'postgres'
-  | 'react'
-  | 'react-native'
-  | 'rest'
-  | 'symfony'
-  | 'tailwind'
-  | 'vuejs';
-
-type TechStack = {
-  langs: TechLang[];
-  tools: TechTool[];
-};
-
-export type TimelineItem = {
-  /** Job title */
-  name: string;
-  /** Job title */
-  type: 'study' | 'work';
-  /** Name of the company or client */
-  place: string;
-  /** City or country of the company or client */
-  location: string;
-  /** The sector of the company's business */
-  sector: string;
-  period: TimelinePeriod;
-  /** Short description of the role */
-  content: string;
-  url?: string;
-  stack?: TechStack;
-  description?: string[] | ReactElement[];
-};
+import { useTranslation } from 'next-i18next';
 
 type TimelineProps = {
-  items: TimelineItem[];
+  names: string[];
+  type: ExperienceTypes;
 };
 
 const min = 4;
 
-const Timeliner: FC<TimelineProps> = ({ items: rawItems }) => {
-  const { items, isMax, toggleMore } = useShowMore<TimelineItem>(rawItems, min);
+const Timeliner: FC<TimelineProps> = ({ names, type }) => {
+  const { t } = useTranslation(type);
+  const { items, isMax, toggleMore } = useShowMore<string>(names, min);
   const [show, setShow] = useState(false);
-  const [item, setItem] = useState<TimelineItem>(items[0]);
+  const [name, setName] = useState<string>(items[0]);
 
   const showItemInModal = (index: number) => {
-    setItem(items[index]);
+    setName(names[index]);
     setShow(true);
   };
   const closeModal = () => {
@@ -85,39 +31,42 @@ const Timeliner: FC<TimelineProps> = ({ items: rawItems }) => {
 
   return (
     <>
-      <ExperienceModal data={item} show={show} toggleShow={closeModal} />
+      <ExperienceModal name={name} type={type} show={show} toggleShow={closeModal} />
       <div className="text-center">
-        <div className={`mt-5 text-left ${!isMax && items.length > min && 'gradient-mask-b-50'}`}>
-          {items.map(({ name, period, content, location, place, sector }, i) => (
-            <div key={`${name}-${i}`} className="flex items-center relative">
-              <div className="hidden md:block w-20">
-                <div className="font-bold italic">{period.year}</div>
-                <div className="space-x-1 text-xs">
-                  <div>{period.from}</div>
-                  <div>-</div>
-                  <div>{period.to}</div>
-                </div>
-              </div>
-              <div className="border-r-2 border-indigo-400 absolute h-full left-1 md:left-20 top-2">
-                <HiOutlineCheckCircle className="w-6 h-6 -top-1 -ml-[11px] absolute text-indigo-400 bg-white dark:bg-black" />
-              </div>
-              <div className="ml-10 cursor-pointer" onClick={() => showItemInModal(i)}>
-                <div className="capitalize font-bold">
-                  {name} {sector && <span className="italic font-extralight">({sector})</span>}
-                </div>
-                <div className="italic md:mb-4">
-                  {place} - {location}
-                </div>
-                <div className="mb-4 mt-2 md:hidden">
-                  <div className="font-bold">{period.year}</div>
-                  <div className="text-xs">
-                    {period.from} - {period.to}
+        <div className={`mt-5 text-left ${!isMax && names.length > min && 'gradient-mask-b-50'}`}>
+          {items.map((name, i) => {
+            return (
+              <div key={`${name}-${i}`} className="flex items-center relative">
+                <div className="hidden md:block w-20">
+                  <div className="font-bold italic">{t(`${name}.period.year`)}</div>
+                  <div className="space-x-1 text-xs">
+                    <div>{t(`${name}.period.from`)}</div>
+                    <div>-</div>
+                    <div>{t(`${name}.period.to`)}</div>
                   </div>
                 </div>
-                <div className="mb-10">{content}</div>
+                <div className="border-r-2 border-indigo-400 absolute h-full left-1 md:left-20 top-2">
+                  <FiCheckCircle className="w-6 h-6 -top-1 -ml-[11px] absolute text-indigo-400 bg-white dark:bg-black" />
+                </div>
+                <div className="ml-10 cursor-pointer" onClick={() => showItemInModal(i)}>
+                  <div className="capitalize font-bold">
+                    {t(`${name}.title`)}{' '}
+                    {t(`${name}.sector`) && <span className="italic font-extralight">({t(`${name}.sector`)})</span>}
+                  </div>
+                  <div className="italic md:mb-4">
+                    {t(`${name}.place`)} - {t(`${name}.location`)}
+                  </div>
+                  <div className="mb-4 mt-2 md:hidden">
+                    <div className="font-bold">{t(`${name}.period.year`)}</div>
+                    <div className="text-xs">
+                      {t(`${name}.period.from`)} - {t(`${name}.period.to`)}
+                    </div>
+                  </div>
+                  <div className="mb-10">{t(`${name}.content`)}</div>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
           <div className="flex items-center relative">
             <div className="hidden md:block w-20"></div>
             <div className="border-r-2 border-indigo-400 absolute h-full left-1 md:left-20 top-2">
@@ -126,7 +75,7 @@ const Timeliner: FC<TimelineProps> = ({ items: rawItems }) => {
           </div>
         </div>
 
-        {rawItems.length > min && (
+        {names.length > min && (
           <div className="relative cursor-pointer" onClick={toggleMore}>
             <span className="absolute inline-block rounded-full bg-indigo-500 text-white text-lg p-2">
               {isMax ? <MdOutlineUnfoldLess /> : <TbDotsVertical />}
