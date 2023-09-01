@@ -1,92 +1,28 @@
 import React, { FC, ReactElement, useState } from 'react';
 
 import ExperienceModal from '../components/ExperienceModal';
-import { HiOutlineCheckCircle } from 'react-icons/hi2';
+import { ExperienceTypes } from '../sections/PastExperience/experiences';
+import { FiCheckCircle } from 'react-icons/fi';
 import { MdOutlineUnfoldLess } from 'react-icons/md';
 import { TbDotsVertical } from 'react-icons/tb';
 import useShowMore from '../hooks/useShowMore';
 import { useTranslation } from 'next-i18next';
 
-type TimelinePeriod = {
-  year: string;
-  from: string;
-  to: string;
-};
-
-export type TechLang = 'go' | 'typescript' | 'c++' | 'solidity' | 'nodejs' | 'python' | 'php';
-
-export type TechTool =
-  | 'alpinejs'
-  | 'apollo'
-  | 'aws'
-  | 'cypress'
-  | 'docker'
-  | 'gitlab'
-  | 'graphql'
-  | 'heroku'
-  | 'kubernetes'
-  | 'jest'
-  | 'jquery'
-  | 'metamask'
-  | 'mongo'
-  | 'mysql'
-  | 'netlify'
-  | 'nextjs'
-  | 'openapi'
-  | 'postgres'
-  | 'react'
-  | 'react-native'
-  | 'rest'
-  | 'symfony'
-  | 'tailwind'
-  | 'vuejs';
-
-export type TechStack = {
-  langs: TechLang[];
-  tools: TechTool[];
-};
-
-export type WorkExperienceDesc = {
-  content: string | ReactElement;
-  url?: string;
-};
-
-export type TimelineItem = {
-  /** Job title */
-  title: string;
-  /** short name of the company or client */
-  name: string;
-  /** Job title */
-  type: 'study' | 'work';
-  /** Full Name of the company or client */
-  place: string;
-  /** City or country of the company or client */
-  location: string;
-  /** The sector of the company's business */
-  sector: string;
-  period: TimelinePeriod;
-  /** Short description of the role */
-  content: string;
-  url?: string;
-  stack?: TechStack;
-  description?: WorkExperienceDesc[] | ReactElement[];
-};
-
 type TimelineProps = {
   names: string[];
+  type: ExperienceTypes;
 };
 
 const min = 4;
 
-const Timeliner: FC<TimelineProps> = ({ names }) => {
-  const { t } = useTranslation('works');
+const Timeliner: FC<TimelineProps> = ({ names, type }) => {
+  const { t } = useTranslation(type);
   const { items, isMax, toggleMore } = useShowMore<string>(names, min);
   const [show, setShow] = useState(false);
   const [name, setName] = useState<string>(items[0]);
 
   const showItemInModal = (index: number) => {
     setName(names[index]);
-    console.log('items[index]:', names[index]);
     setShow(true);
   };
   const closeModal = () => {
@@ -95,7 +31,7 @@ const Timeliner: FC<TimelineProps> = ({ names }) => {
 
   return (
     <>
-      <ExperienceModal name={name} show={show} toggleShow={closeModal} />
+      <ExperienceModal name={name} type={type} show={show} toggleShow={closeModal} />
       <div className="text-center">
         <div className={`mt-5 text-left ${!isMax && names.length > min && 'gradient-mask-b-50'}`}>
           {items.map((name, i) => {
@@ -110,7 +46,7 @@ const Timeliner: FC<TimelineProps> = ({ names }) => {
                   </div>
                 </div>
                 <div className="border-r-2 border-indigo-400 absolute h-full left-1 md:left-20 top-2">
-                  <HiOutlineCheckCircle className="w-6 h-6 -top-1 -ml-[11px] absolute text-indigo-400 bg-white dark:bg-black" />
+                  <FiCheckCircle className="w-6 h-6 -top-1 -ml-[11px] absolute text-indigo-400 bg-white dark:bg-black" />
                 </div>
                 <div className="ml-10 cursor-pointer" onClick={() => showItemInModal(i)}>
                   <div className="capitalize font-bold">
