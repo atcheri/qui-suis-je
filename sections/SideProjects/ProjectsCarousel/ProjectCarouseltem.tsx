@@ -1,10 +1,10 @@
 import { Button } from 'flowbite-react';
-import Image from 'next/image';
 import { FC } from 'react';
-import { useTranslation } from 'react-i18next';
-import { VscLinkExternal } from 'react-icons/vsc';
-
+import Image from 'next/image';
+import Link from 'next/link';
 import { Project } from '../projects';
+import { VscLinkExternal } from 'react-icons/vsc';
+import { useTranslation } from 'react-i18next';
 
 type ProjectCarouseltemProps = { project: Project };
 
@@ -16,12 +16,12 @@ const ProjectCarouseltem: FC<ProjectCarouseltemProps> = ({ project }) => {
       <Image className="rounded-md" src={project.imageUrl} width={360} height={300} alt={''} />
       <h3 className="font-bold text-lg md:text-xl">{project.title}</h3>
       <p className="text-md">{project.description}</p>
-      <a href={project.url} target="_blank" rel="noreferrer">
-        <Button color="rgb(81 69 205 / var(--tw-bg-opacity))" className="bg-indigo-700" outline={true}>
+      <Link href={project.url} target="_blank" rel="noreferrer">
+        <button className="btn flex items-center p-2 text-sm">
           <span className="mr-2">{t('projects.discover')}</span>
           <VscLinkExternal />
-        </Button>
-      </a>
+        </button>
+      </Link>
     </div>
   );
 };
