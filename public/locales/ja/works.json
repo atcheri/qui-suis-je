@@ -33,6 +33,12 @@
     },
     "description": [
       {
+        "content": "AWS CDK（Cloud Development Kit）を使ったデータ分析パイプライン。このプロジェクトは、あらゆるaffinidiサービスから送信されるイベントの収集で構成されています。Cloudwatchアラームによるモニタリング、Firehoseデリバリーストリームを経由したKinesisデータストリームによるS3バケットへのデータ取り込み、GlueジョブによるETL、Athenaを使用したクエリ。"
+      },
+      {
+        "content": "AWS CDKを使ったデータコネクターフレームワーク。このプロジェクトは、ユーザーのデータを（linkedin、strava、discord、spotify等から）一つのAffinidiツールに接続し、統一する役割を果たす目的です。Cloudwatchを使ったモニタリング、ラムダ関数をデプロイしたり、Dynamo DBを使ってデーター処理を行いました。"
+      },
+      {
         "content": "オープンソースのコマンドラインインターフェース:",
         "url": "https://github.com/affinidi/affinidi-cli"
       },

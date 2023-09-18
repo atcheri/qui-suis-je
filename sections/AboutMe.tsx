@@ -4,8 +4,8 @@ import AnchoredHeader from '../components/AnchoredHeader';
 import { BsMouse } from 'react-icons/bs';
 import { CiLinkedin } from 'react-icons/ci';
 import { FC } from 'react';
+import { FaGithub } from 'react-icons/fa';
 import { Fade } from 'react-awesome-reveal';
-import { GoMarkGithub } from 'react-icons/go';
 import { LineIcon } from '../components/Icons';
 import Link from 'next/link';
 import Pana from '../components/Avatars/Pana';
@@ -39,7 +39,7 @@ const AboutMe: FC = () => {
               <CiLinkedin className="h-7 w-7 text-blue-500" />
             </Link>
             <Link href={CONTACT_LINKS.GITHUB} target="_blank">
-              <GoMarkGithub className="h-7 w-7" />
+              <FaGithub className="h-7 w-7" />
             </Link>
             <Link href={CONTACT_LINKS.TELEGRAM} target="_blank">
               <SiTelegram className="h-7 w-7 text-blue-400" />

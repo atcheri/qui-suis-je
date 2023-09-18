@@ -68,7 +68,7 @@ const Experience: FC<ExperienceProps> = ({ name, show, toggleShow, type }) => {
   const stack = t(`${name}.stack`, { returnObjects: true, ns: type }) as TechStack;
 
   return (
-    <Modal show={show} onClose={onClose}>
+    <Modal dismissible show={show} onClose={onClose} size="5xl">
       <Modal.Header>
         <div>{t(`${name}.title`, { ns: type })}</div>
         <div className="italic text-sm text-slate-500 dark:text-white">
@@ -118,11 +118,13 @@ const Experience: FC<ExperienceProps> = ({ name, show, toggleShow, type }) => {
             <h3 className="text-md italic mb-2 font-bold">
               {t(`${name}.type`, { ns: type }) === 'work' ? 'Key achievements' : 'Content of study'}
             </h3>
-            <ul className="space-y-1 max-w-md list-inside">
+            <ul className="space-y-1 list-inside">
               {(desc as WorkExperienceDesc[])?.map((l, i) => {
                 return (
-                  <li key={i} className="flex items-center italic gap-1">
-                    <RiCheckFill className="text-green-500 dark:text-green-400" />
+                  <li key={i} className="flex italic gap-1">
+                    <span className="pt-2">
+                      <RiCheckFill className="h-4 w-4 text-green-500 dark:text-green-400" />
+                    </span>
                     <div>{l.content}</div>
                     {l.url && (
                       <Link className="text-indigo-500" href={l.url} target="_blank">

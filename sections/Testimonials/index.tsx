@@ -3,7 +3,7 @@ import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
 
 import AnchoredHeader from '../../components/AnchoredHeader';
 import { CiLinkedin } from 'react-icons/ci';
-import { GoMarkGithub } from 'react-icons/go';
+import { FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
 import { MdOutlineUnfoldLess } from 'react-icons/md';
 import { SECTION } from '../constants';
@@ -127,7 +127,7 @@ const Testimonials: FC = () => {
                 )}
                 {github && (
                   <Link href={github} target="_blank">
-                    <GoMarkGithub className="h-5 w-5" />
+                    <FaGithub className="h-5 w-5" />
                   </Link>
                 )}
                 <span className="text-slate-500 dark:text-slate-300">{role}</span>
