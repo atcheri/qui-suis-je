@@ -33,7 +33,7 @@
     },
     "description": [
       {
-        "content": "Data analytics pipeline using AWS CDK (Cloud Development Kit). This project consists of collecting events sent from any affinidi services. Moniroring with Cloudwatch Alarms, Ingesting data through Kinesis Data Stream via Firehose Delivery Stream to S3 Bucket; ETL with Glue jobs and querying using Athena"
+        "content": "Data analytics pipeline using AWS CDK (Cloud Development Kit). This project consists of collecting events sent from any affinidi services. Moniroring with Cloudwatch Alarms, Ingesting data through Kinesis Data Stream via Firehose Delivery Stream to S3 Bucket; ETL with Glue jobs and querying using Athena; Integration of synthetic canary tests"
       },
       {
         "content": "Data connector framekwork using AWS CDK. This project consists of connecting & unifying user data (linkedin, strava, discord, spotify etc...) into one unique tool. Monitoring with cloudwatch, deploying lambda functions with a Dynamo DB persistent layer."
