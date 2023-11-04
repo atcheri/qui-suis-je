@@ -27,19 +27,19 @@ const blockchainCouncilCertificates: BlockchainCouncilCertificate[] = [
 
 const BlockchainCouncilCertificates: FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3">
+    <>
       {blockchainCouncilCertificates.map((c) => (
         <Link key={c.title} href={c.url} target="_blank" rel="noreferrer">
           <Card
             className="flex items-center max-w-xs pt-3"
-            renderImage={() => <Image key={c.title} src={c.badgeUrl} alt={c.title} height={150} width={150} />}>
+            renderImage={() => <Image key={c.title} src={c.badgeUrl} alt={c.title} height={100} width={100} />}>
             <div className="flex justify-center space-x-3">
               <div className="btn flex items-center text-sm">Verify</div>
             </div>
           </Card>
         </Link>
       ))}
-    </div>
+    </>
   );
 };
 
