@@ -6,6 +6,7 @@ import { FC } from 'react';
 import { GiJourney } from 'react-icons/gi';
 import { GoHome } from 'react-icons/go';
 import Link from 'next/link';
+import { PiCertificateDuotone } from 'react-icons/pi';
 import { SECTION } from '../constants';
 import { withTransition } from '../../styles/tailwind.classes';
 
@@ -26,6 +27,9 @@ const NavBar: FC = () => {
         </Link>
         <Link href={`/#${SECTION.TESTIMONIALS}`} className={itemClass}>
           <MdOutlineRateReview />
+        </Link>
+        <Link href={`/#${SECTION.CERTIFICATES}`} className={itemClass}>
+          <PiCertificateDuotone />
         </Link>
         <Link href={`/#${SECTION.SIDE_PROJECTS}`} className={itemClass}>
           <AiOutlineExperiment />

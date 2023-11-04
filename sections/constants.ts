@@ -2,6 +2,7 @@ export const RESUME_URL = 'https://flowcv.com/resume/9wsgtkq6rf';
 
 export const SECTION = Object.freeze({
   ABOUT_ME: 'about-me',
+  CERTIFICATES: 'certificates',
   CONTACT_ME: 'contact-me',
   HERO: 'hero',
   HOME: '/',
