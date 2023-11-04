@@ -1,5 +1,9 @@
 {
   "about-me": "About me",
+  "certificates": {
+    "title": "Certificates",
+    "sub-title": "What I've recently obtained"
+  },
   "business": "Business",
   "contact": {
     "title": "Get in touch",

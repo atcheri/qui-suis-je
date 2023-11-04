@@ -1,6 +1,7 @@
 import { FC, useCallback, useEffect } from 'react';
 
 import AboutMe from '../sections/AboutMe';
+import Certificates from '../sections/Certifications';
 import ContactMe from '../sections/ContactMe';
 import { GetStaticProps } from 'next';
 import Hero from '../sections/Hero';
@@ -52,6 +53,7 @@ const Home: FC = () => {
       <AboutMe />
       <PastExperience />
       <Testimonials />
+      <Certificates />
       <SideProjects />
       <ContactMe />
     </Layout>

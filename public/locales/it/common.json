@@ -1,6 +1,10 @@
 {
   "about-me": "Su di me",
   "business": "Que cosa fanno",
+  "certificates": {
+    "title": "Certificati",
+    "sub-title": "Ho recentemente ottenuto"
+  },
   "contact": {
     "title": "Contatto",
     "sub-title": "Non esitare a contattarmi",

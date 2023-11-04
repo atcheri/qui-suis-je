@@ -1,6 +1,10 @@
 {
   "about-me": "自己紹介",
   "business": "会社概要",
+  "certificates": {
+    "title": "証明書 (サーティフィケート)",
+    "sub-title": "最近獲得しました"
+  },
   "contact": {
     "title": "問い合わせ",
     "sub-title": "もしよろしければ、SNSかフォームなどをお使いください",
